@@ -55,6 +55,10 @@
       ],
       "files": [
         {
+          "path": "src/components/brand-header.tsx",
+          "type": "registry:component"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -78,6 +82,14 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/components/brand-header.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/components/brand-sidebar.tsx",
+          "type": "registry:component"
+        },
         {
           "path": "src/v0/shell-layout.tsx",
           "type": "registry:file",
