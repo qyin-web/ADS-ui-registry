@@ -21,11 +21,11 @@ export default function Home() {
       <div className="mb-8">
         <div className="space-y-2">
           <h1 className="font-bold text-3xl tracking-tight md:text-4xl">
-            Registry
+            Confluence UI Kit
           </h1>
           <p className="text-muted-foreground">
-            Distribute your design system tokens, custom components, hooks,
-            pages, and other files to any React project.
+            Atlassian Design System components and blocks for Confluence applications.
+            Build consistent, professional Confluence interfaces with our curated component library.
           </p>
         </div>
       </div>
@@ -156,13 +156,11 @@ export default function Home() {
         <div className="flex flex-col gap-2">
           <h2 className="font-semibold text-xl">About</h2>
           <p className="text-muted-foreground">
-            This registry serves as a central repository for all UI components
-            and blocks used in your applications. It helps maintain consistency
-            across your products and speeds up development by providing
-            ready-to-use components. Each component and block is documented with
-            examples. You can browse components by category, search for specific
-            components, and view examples of how they are used in different
-            contexts.
+            This Confluence UI Kit serves as a central repository for all Atlassian Design System 
+            components and blocks specifically designed for Confluence applications. It helps maintain 
+            consistency across your Confluence products and speeds up development by providing 
+            ready-to-use, ADS-compliant components. Each component and block is documented with 
+            examples and follows Atlassian's design guidelines.
           </p>
           <p className="mt-2 text-muted-foreground">
             To get begin, select a{" "}

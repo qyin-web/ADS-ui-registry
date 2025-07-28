@@ -1,12 +1,17 @@
-import { Squirrel } from "lucide-react";
+"use client";
+
+import { ConfluenceIcon } from "@atlaskit/logo";
 
 export function RegistryLogo() {
   return (
     <>
-      <div className="flex-shrink-0 rounded-md bg-primary p-1">
-        <Squirrel className="size-5 text-secondary" />
+      <div className="flex-shrink-0 flex items-center">
+        <ConfluenceIcon 
+          appearance="brand" 
+          shouldUseNewLogoDesign 
+        />
       </div>
-      <span className="font-semibold">Registry</span>
+      <span className="font-semibold">Confluence UI Kit</span>
     </>
   );
 }
