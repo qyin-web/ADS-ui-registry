@@ -1,13 +1,6 @@
 "use client";
 
 import { HelpCircle, Menu, Search, X, Bell, Plus, MessageSquare, Star } from "lucide-react";
-import SearchIcon from "@atlaskit/icon/core/search";
-import AddIcon from "@atlaskit/icon/core/add";
-import NotificationIcon from "@atlaskit/icon/core/notification";
-import QuestionCircleIcon from "@atlaskit/icon/core/question-circle";
-import SidebarCollapseIcon from "@atlaskit/icon/core/sidebar-collapse";
-import AppSwitcherIcon from "@atlaskit/icon/core/app-switcher";
-import RovoChatIcon from "@atlaskit/icon/core/rovo-chat";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -19,7 +12,7 @@ import { useSidebar } from "@/components/ui/sidebar";
 import { Logo } from "./logo";
 
 export function BrandHeader() {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false); // Kept for potential future use, though search is always visible now
   const { state, toggleSidebar } = useSidebar();
   const isCollapsed = state === "collapsed";
 
@@ -35,7 +28,7 @@ export function BrandHeader() {
             className="h-8 w-8 rounded-[3px] p-1.5 flex items-center justify-center"
             onClick={toggleSidebar}
           >
-            <SidebarCollapseIcon size="small" label="Collapse sidebar" />
+            <Menu size={16} />
           </Button>
 
           {/* App Switcher */}
@@ -44,7 +37,7 @@ export function BrandHeader() {
             size="icon"
             className="h-8 w-8 rounded-[3px] p-1.5 flex items-center justify-center"
           >
-            <AppSwitcherIcon size="small" label="App switcher" />
+            <Star size={16} />
           </Button>
 
           {/* Logo */}
@@ -66,7 +59,7 @@ export function BrandHeader() {
                 style={{ fontFamily: "Atlassian Sans, sans-serif", fontWeight: 400, lineHeight: "normal" }}
               />
               <div className="absolute left-2 top-2 size-4">
-                <SearchIcon size="small" label="Search" />
+                <Search size={16} />
               </div>
             </div>
           </div>
@@ -76,25 +69,25 @@ export function BrandHeader() {
         <div className="flex items-center gap-1 min-w-[300px] pl-[47.63px]">
           {/* Create Button */}
           <div className="mr-2">
-            <Button 
-              variant="default" 
-              size="sm" 
+            <Button
+              variant="default"
+              size="sm"
               className="h-8 bg-[#1868db] hover:bg-[#1868db]/90 text-white px-2 py-1.5 rounded-[3px] gap-1"
               style={{ fontFamily: "Atlassian Sans, sans-serif", fontWeight: 500, fontSize: "14px", lineHeight: "20px" }}
             >
-              <AddIcon size="small" label="Create" />
+              <Plus size={16} />
               <span>Create</span>
             </Button>
           </div>
 
           {/* Rovo Chat Button */}
-          <Button 
-            variant="ghost" 
-            size="sm" 
+          <Button
+            variant="ghost"
+            size="sm"
             className="h-8 px-3 text-[#505258] hover:bg-transparent gap-1.5"
             style={{ fontFamily: "Atlassian Sans, sans-serif", fontWeight: 500, fontSize: "14px", lineHeight: "20px" }}
           >
-            <RovoChatIcon size="small" label="Rovo chat" />
+            <MessageSquare size={16} />
             <span>Rovo chat</span>
           </Button>
 
@@ -104,7 +97,7 @@ export function BrandHeader() {
             size="icon"
             className="h-8 w-8 rounded-[3px] p-1.5"
           >
-            <NotificationIcon size="small" label="Notifications" />
+            <Bell size={16} />
           </Button>
 
           {/* Help Icon */}
@@ -113,7 +106,7 @@ export function BrandHeader() {
             size="icon"
             className="h-8 w-8 rounded-[3px] p-1.5"
           >
-            <QuestionCircleIcon size="small" label="Help" />
+            <HelpCircle size={16} />
           </Button>
 
           {/* Avatar */}

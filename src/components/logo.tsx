@@ -1,7 +1,5 @@
 "use client";
 
-import { ConfluenceIcon } from "@atlaskit/logo";
-
 interface LogoProps {
   size?: "small" | "medium" | "large";
   showText?: boolean;
@@ -18,11 +16,8 @@ export function Logo({ size = "medium", showText = true }: LogoProps) {
 
   return (
     <div className="flex items-center gap-1.5">
-      <div className={`${getScale()} transform origin-center flex items-center justify-center`}>
-        <ConfluenceIcon 
-          appearance="brand" 
-          shouldUseNewLogoDesign 
-        />
+      <div className={`${getScale()} transform origin-center flex items-center justify-center w-8 h-8 bg-blue-600 rounded text-white font-bold text-xs`}>
+        C
       </div>
       {showText && (
         <h1 className="font-bold text-[#172B4D] leading-none">Confluence</h1>
