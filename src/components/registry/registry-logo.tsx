@@ -1,7 +1,5 @@
 "use client";
 
-import { ConfluenceIcon } from "@atlaskit/logo";
-
 export function RegistryLogo() {
   return (
     <>
