@@ -12,13 +12,12 @@ export default async function StorePage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="font-bold text-3xl tracking-tighter sm:text-4xl md:text-5xl">
-                  Welcome to Store
+                <h1 className="font-bold text-3xl tracking-tighter sm:text-4xl md:text-5xl text-[#172B4D]">
+                  Confluence Templates
                 </h1>
 
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl">
-                  Shop our unique collection of products. Free shipping on all
-                  orders!
+                <p className="mx-auto max-w-[700px] text-[#6B778C] md:text-xl">
+                  Browse and use our collection of Confluence templates and components to build your workspace faster.
                 </p>
               </div>
             </div>
