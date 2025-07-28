@@ -56,7 +56,13 @@
       "files": [
         {
           "path": "src/components/brand-header.tsx",
-          "type": "registry:component"
+          "type": "registry:component",
+          "target": "components/brand-header.tsx"
+        },
+        {
+          "path": "src/components/logo.tsx",
+          "type": "registry:component",
+          "target": "components/logo.tsx"
         },
         {
           "path": "src/v0/minimal-layout.tsx",
@@ -84,11 +90,18 @@
       "files": [
         {
           "path": "src/components/brand-header.tsx",
-          "type": "registry:component"
+          "type": "registry:component",
+          "target": "components/brand-header.tsx"
         },
         {
           "path": "src/components/brand-sidebar.tsx",
-          "type": "registry:component"
+          "type": "registry:component",
+          "target": "components/brand-sidebar.tsx"
+        },
+        {
+          "path": "src/components/logo.tsx",
+          "type": "registry:component",
+          "target": "components/logo.tsx"
         },
         {
           "path": "src/v0/shell-layout.tsx",
