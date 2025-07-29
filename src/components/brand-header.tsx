@@ -87,7 +87,7 @@ export function BrandHeader() {
               className="text-foreground hover:bg-muted"
               onClick={() => setIsSearchOpen(true)}
             >
-              <div className="mr-2 size-4">
+              <div className="size-4">
                 <SearchIcon label="Search" />
               </div>
               Search
@@ -95,14 +95,14 @@ export function BrandHeader() {
           )}
 
           <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            <div className="mr-2 size-4">
+            <div className="size-4">
               <AddIcon label="Create" />
             </div>
             Create
           </Button>
 
           <Button variant="outline" size="sm" className="text-foreground hover:bg-muted">
-            <div className="mr-2 size-4">
+            <div className="size-4">
               <RovoChatIcon label="Rovo chat" />
             </div>
             Rovo chat
