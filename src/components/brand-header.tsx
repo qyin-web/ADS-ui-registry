@@ -101,7 +101,7 @@ export function BrandHeader() {
             Create
           </Button>
 
-          <Button variant="ghost" size="sm" className="text-foreground hover:bg-muted">
+          <Button variant="outline" size="sm" className="text-foreground hover:bg-muted">
             <div className="mr-2 size-4">
               <RovoChatIcon label="Rovo chat" />
             </div>

@@ -78,4 +78,9 @@
   ::file-selector-button {
     border-color: var(--color-border, currentColor);
   }
+
+  /* Remove box shadows from all buttons in the registry */
+  button {
+    box-shadow: none !important;
+  }
 }
