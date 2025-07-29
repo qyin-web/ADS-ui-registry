@@ -6,6 +6,7 @@ import AppSwitcherIcon from '@atlaskit/icon/core/app-switcher';
 import SearchIcon from '@atlaskit/icon/core/search';
 import AddIcon from '@atlaskit/icon/core/add';
 import RovoChatIcon from '@atlaskit/icon/core/rovo-chat';
+import NotificationIcon from '@atlaskit/icon/core/notification';
 import QuestionCircleIcon from '@atlaskit/icon/core/question-circle';
 import Link from "next/link";
 import { useState } from "react";
@@ -107,11 +108,24 @@ export function BrandHeader() {
             Rovo chat
           </Button>
 
-          <Button variant="ghost" size="sm" className="text-foreground hover:bg-muted">
-            <div className="mr-2 size-4">
+          <Button
+            variant="ghost"
+            size="icon"
+            className="size-8 hover:bg-muted"
+          >
+            <div className="size-4">
+              <NotificationIcon label="Notifications" />
+            </div>
+          </Button>
+
+          <Button
+            variant="ghost"
+            size="icon"
+            className="size-8 hover:bg-muted"
+          >
+            <div className="size-4">
               <QuestionCircleIcon label="Support" />
             </div>
-            Support
           </Button>
 
           <Avatar className="size-8 ml-2">
