@@ -1,6 +1,7 @@
 "use client";
 
 import { HelpCircle, Menu, Search, X, Bell, Plus, MessageSquare, Star, Grid3X3 } from "lucide-react";
+import SidebarCollapseIcon from '@atlaskit/icon/core/sidebar-collapse';
 import Link from "next/link";
 import { useState } from "react";
 
@@ -27,11 +28,9 @@ export function BrandHeader() {
             className="hidden size-8 md:flex hover:bg-muted"
             onClick={toggleSidebar}
           >
-            {isCollapsed ? (
-              <Menu className="size-4" />
-            ) : (
-              <X className="size-4" />
-            )}
+            <div className="size-4">
+              <SidebarCollapseIcon label="Toggle sidebar" />
+            </div>
           </Button>
 
           {/* App Switcher Button */}
