@@ -21,7 +21,7 @@ export default function Home() {
       <div className="mb-8">
         <div className="space-y-2">
           <h1 className="font-bold text-3xl tracking-tight md:text-4xl">
-            Confluence UI Kit
+            TEST REGISTRY V0 - THIS IS A TEST
           </h1>
           <p className="text-muted-foreground">
             Atlassian Design System components and blocks for Confluence applications.
