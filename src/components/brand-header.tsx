@@ -2,6 +2,11 @@
 
 import { HelpCircle, Menu, Search, X, Bell, Plus, MessageSquare, Star, Grid3X3 } from "lucide-react";
 import SidebarCollapseIcon from '@atlaskit/icon/core/sidebar-collapse';
+import AppSwitcherIcon from '@atlaskit/icon/core/app-switcher';
+import SearchIcon from '@atlaskit/icon/core/search';
+import AddIcon from '@atlaskit/icon/core/add';
+import RovoChatIcon from '@atlaskit/icon/core/rovo-chat';
+import QuestionCircleIcon from '@atlaskit/icon/core/question-circle';
 import Link from "next/link";
 import { useState } from "react";
 
@@ -39,7 +44,9 @@ export function BrandHeader() {
             size="icon"
             className="hidden size-8 md:flex hover:bg-muted"
           >
-            <Grid3X3 className="size-4" />
+            <div className="size-4">
+              <AppSwitcherIcon label="App switcher" />
+            </div>
           </Button>
 
           {/* Mobile Menu Button */}
@@ -68,7 +75,9 @@ export function BrandHeader() {
                 autoFocus
                 onBlur={() => setIsSearchOpen(false)}
               />
-              <Search className="absolute top-2.5 left-3 size-4 text-muted-foreground" />
+              <div className="absolute top-2.5 left-3 size-4 text-muted-foreground">
+                <SearchIcon label="Search" />
+              </div>
             </div>
           ) : (
             <Button
@@ -77,23 +86,31 @@ export function BrandHeader() {
               className="text-foreground hover:bg-muted"
               onClick={() => setIsSearchOpen(true)}
             >
-              <Search className="mr-2 size-4" />
+              <div className="mr-2 size-4">
+                <SearchIcon label="Search" />
+              </div>
               Search
             </Button>
           )}
 
           <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            <Plus className="mr-2 size-4" />
+            <div className="mr-2 size-4">
+              <AddIcon label="Create" />
+            </div>
             Create
           </Button>
 
           <Button variant="ghost" size="sm" className="text-foreground hover:bg-muted">
-            <MessageSquare className="mr-2 size-4" />
+            <div className="mr-2 size-4">
+              <RovoChatIcon label="Rovo chat" />
+            </div>
             Rovo chat
           </Button>
 
           <Button variant="ghost" size="sm" className="text-foreground hover:bg-muted">
-            <HelpCircle className="mr-2 size-4" />
+            <div className="mr-2 size-4">
+              <QuestionCircleIcon label="Support" />
+            </div>
             Support
           </Button>
 
@@ -106,7 +123,9 @@ export function BrandHeader() {
 
         <div className="flex gap-2 md:hidden">
           <Button variant="ghost" size="sm" className="text-foreground">
-            <Search className="h-5 w-5" />
+            <div className="h-5 w-5">
+              <SearchIcon label="Search" />
+            </div>
           </Button>
           <Avatar className="size-8">
             <AvatarFallback className="bg-orange-500 text-white">
