@@ -67,14 +67,14 @@ export function BrandHeader() {
           </Link>
         </div>
 
-        {/* Search and Create buttons - separate from right group */}
-        <div className="hidden items-center space-x-2 md:flex">
+        {/* Center section - Flexible search bar and Create button */}
+        <div className="hidden items-center space-x-2 md:flex flex-1 justify-center">
           {isSearchOpen ? (
-            <div className="relative">
+            <div className="relative flex-1 max-w-md">
               <Input
                 type="text"
                 placeholder="Search"
-                className="h-9 w-64 pl-9"
+                className="h-9 w-full pl-9"
                 autoFocus
                 onBlur={() => setIsSearchOpen(false)}
               />
@@ -83,17 +83,19 @@ export function BrandHeader() {
               </div>
             </div>
           ) : (
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-foreground hover:bg-muted h-8"
-              onClick={() => setIsSearchOpen(true)}
-            >
-              <div className="size-4">
-                <SearchIcon label="Search" />
-              </div>
-              Search
-            </Button>
+            <div className="relative flex-1 max-w-md">
+              <Button
+                variant="outline"
+                size="sm"
+                className="w-full justify-start text-muted-foreground hover:bg-muted h-9"
+                onClick={() => setIsSearchOpen(true)}
+              >
+                <div className="size-4 mr-2">
+                  <SearchIcon label="Search" />
+                </div>
+                Search
+              </Button>
+            </div>
           )}
 
           <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 h-8">
