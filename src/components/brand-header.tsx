@@ -26,7 +26,8 @@ export function BrandHeader() {
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-border bg-background">
       <div className="flex h-12 items-center justify-between px-4">
-        <div className="flex items-center space-x-2">
+        {/* Left section - Sidebar, App Switcher, Logo (300px width) */}
+        <div className="flex items-center space-x-2 w-[300px]">
           {/* Sidebar Collapse Button */}
           <Button
             variant="ghost"
@@ -60,12 +61,13 @@ export function BrandHeader() {
             <Menu className="size-4" />
           </Button>
 
-          {/* Logo with proper spacing */}
-          <Link href="/" className="flex items-center ml-2">
+          {/* Logo with 6px spacing (ml-1.5 = 6px) */}
+          <Link href="/" className="flex items-center ml-1.5">
             <Logo />
           </Link>
         </div>
 
+        {/* Search and Create buttons - separate from right group */}
         <div className="hidden items-center space-x-2 md:flex">
           {isSearchOpen ? (
             <div className="relative">
@@ -100,7 +102,10 @@ export function BrandHeader() {
             </div>
             Create
           </Button>
+        </div>
 
+        {/* Right button group - 300px width with specific buttons */}
+        <div className="hidden items-center space-x-2 md:flex w-[300px] justify-end">
           <Button variant="outline" size="sm" className="text-foreground hover:bg-muted h-8">
             <div className="size-4">
               <RovoChatIcon label="Rovo chat" />
