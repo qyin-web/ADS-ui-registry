@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import { Inter, Geist_Mono, Montserrat } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
@@ -15,9 +15,10 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.svg", type: "image/svg+xml" }],
 };
 
-const GeistSans = Geist({
+const AtlassianSans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
 });
 
 const GeistMono = Geist_Mono({
@@ -39,7 +40,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(
-        GeistSans.variable,
+        AtlassianSans.variable,
         GeistMono.variable,
         MontserratSerif.variable,
         "bg-background text-foreground",
