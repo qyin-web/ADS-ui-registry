@@ -84,7 +84,7 @@ export function BrandHeader() {
             <Button
               variant="ghost"
               size="sm"
-              className="text-foreground hover:bg-muted"
+              className="text-foreground hover:bg-muted h-8"
               onClick={() => setIsSearchOpen(true)}
             >
               <div className="size-4">
@@ -94,14 +94,14 @@ export function BrandHeader() {
             </Button>
           )}
 
-          <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 h-8">
             <div className="size-4">
               <AddIcon label="Create" />
             </div>
             Create
           </Button>
 
-          <Button variant="outline" size="sm" className="text-foreground hover:bg-muted">
+          <Button variant="outline" size="sm" className="text-foreground hover:bg-muted h-8">
             <div className="size-4">
               <RovoChatIcon label="Rovo chat" />
             </div>

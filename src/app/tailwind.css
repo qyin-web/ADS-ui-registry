@@ -94,4 +94,14 @@
   button[data-slot="button"] {
     height: 2rem !important; /* 32px */
   }
+
+  /* Override any h-9 classes on buttons */
+  button.h-9 {
+    height: 2rem !important; /* 32px */
+  }
+
+  /* Override any default button heights */
+  button:not([class*='h-']):not([class*='size-']) {
+    height: 2rem !important; /* 32px */
+  }
 }
