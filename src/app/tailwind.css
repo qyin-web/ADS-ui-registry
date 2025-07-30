@@ -82,5 +82,16 @@
   /* Remove box shadows from all buttons in the registry */
   button {
     box-shadow: none !important;
+    cursor: pointer !important;
+  }
+
+  /* Override any default button heights to ensure 32px */
+  button:not([class*='h-']) {
+    height: 2rem !important; /* 32px */
+  }
+
+  /* Force buttons with size="sm" to be exactly 32px */
+  button[data-slot="button"] {
+    height: 2rem !important; /* 32px */
   }
 }

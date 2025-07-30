@@ -22,8 +22,8 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline font-medium text-[14px] leading-5",
       },
       size: {
-        default: "h-10 px-3 py-2", /* ADS large interactive padding */
-        sm: "h-8 rounded-md gap-1.5 px-3 py-1", /* ADS medium size */
+        default: "h-8 rounded-md gap-1.5 px-3 py-1", /* ADS medium size - 32px */
+        sm: "h-8 rounded-md gap-1.5 px-3 py-1", /* ADS medium size - 32px */
         lg: "h-12 rounded-md px-4 has-[>svg]:px-3", /* ADS large size */
         icon: "size-8", /* ADS icon button size */
       },
