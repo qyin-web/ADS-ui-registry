@@ -25,7 +25,7 @@ export function BrandHeader() {
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-border bg-background">
-      <div className="flex h-12 items-center justify-between px-4">
+      <div className="flex h-12 items-center justify-between px-3 gap-2">
         {/* Left section - Sidebar, App Switcher, Logo (300px width) */}
         <div className="flex items-center space-x-2 w-[300px]">
           {/* Sidebar Collapse Button */}
@@ -70,7 +70,7 @@ export function BrandHeader() {
         {/* Center section - Flexible search bar and Create button */}
         <div className="hidden items-center space-x-2 md:flex flex-1 justify-center">
           {isSearchOpen ? (
-            <div className="relative flex-1 max-w-md">
+            <div className="relative flex-1">
               <Input
                 type="text"
                 placeholder="Search"
@@ -83,7 +83,7 @@ export function BrandHeader() {
               </div>
             </div>
           ) : (
-            <div className="relative flex-1 max-w-md">
+            <div className="relative flex-1">
               <Button
                 variant="outline"
                 size="sm"
