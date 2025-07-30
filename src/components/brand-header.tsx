@@ -25,7 +25,7 @@ export function BrandHeader() {
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-border bg-background">
-      <div className="flex h-16 items-center justify-between px-4">
+      <div className="flex h-12 items-center justify-between px-4">
         <div className="flex items-center space-x-2">
           {/* Sidebar Collapse Button */}
           <Button
