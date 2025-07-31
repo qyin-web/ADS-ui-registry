@@ -163,7 +163,7 @@
       "title": "Brand Header",
       "description": "A styled, simple, reusable header",
       "registryDependencies": [
-        "button",
+        "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
         "input",
         "avatar",
         "sidebar",
@@ -195,7 +195,7 @@
       "description": "A styled, simple, reusable sidebar",
       "registryDependencies": [
         "badge",
-        "button",
+        "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
         "sidebar",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/sonner.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
@@ -224,7 +224,7 @@
       "description": "Username & password login section with customer quote.",
       "registryDependencies": [
         "badge",
-        "button",
+        "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/logo.json"
       ],
@@ -277,7 +277,7 @@
       "description": "Attention-grabbing section for the top of your landing pages.",
       "registryDependencies": [
         "badge",
-        "button",
+        "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
       ],
       "files": [
@@ -303,7 +303,7 @@
       "title": "Promo",
       "description": "Attention-grabbing section to display the current promotional deal.",
       "registryDependencies": [
-        "button",
+        "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
       ],
       "files": [
