@@ -70,7 +70,7 @@ export function BrandHeader() {
         {/* Center section - Flexible search bar and Create button */}
         <div className="hidden items-center space-x-2 md:flex flex-1 justify-center">
           {isSearchOpen ? (
-            <div className="relative flex-1">
+            <div className="relative flex-1 max-w-[780px]">
               <Input
                 type="text"
                 placeholder="Search"
@@ -83,7 +83,7 @@ export function BrandHeader() {
               </div>
             </div>
           ) : (
-            <div className="relative flex-1">
+            <div className="relative flex-1 max-w-[780px]">
               <Button
                 variant="outline"
                 size="sm"
@@ -135,11 +135,15 @@ export function BrandHeader() {
             </div>
           </Button>
 
-          <Avatar className="size-6 ml-2 cursor-pointer select-none hover:ring-4 hover:ring-muted">
-            <AvatarFallback className="bg-chart-3 text-foreground">
-              <span className="text-[10px] font-medium">QY</span>
-            </AvatarFallback>
-          </Avatar>
+          <div className="px-0.5">
+            <div className="p-1">
+              <Avatar className="size-6 cursor-pointer select-none hover:ring-4 hover:ring-muted">
+                <AvatarFallback className="bg-chart-3 text-foreground">
+                  <span className="text-[10px] font-medium">QY</span>
+                </AvatarFallback>
+              </Avatar>
+            </div>
+          </div>
         </div>
 
         <div className="flex gap-2 md:hidden">
