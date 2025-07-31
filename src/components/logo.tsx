@@ -20,7 +20,7 @@ export function Logo({ size = "medium", showText = true }: LogoProps) {
         <ConfluenceIcon appearance="brand" shouldUseNewLogoDesign size="small" />
       </div>
       {showText && (
-        <h1 className="font-semibold text-foreground text-base">Confluence</h1>
+        <h1 className="font-semibold text-foreground text-sm">Confluence</h1>
       )}
     </div>
   );
