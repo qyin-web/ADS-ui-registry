@@ -104,4 +104,9 @@
   button:not([class*='h-']):not([class*='size-']) {
     height: 2rem !important; /* 32px */
   }
+
+  /* Force all buttons to have 4px border radius */
+  button {
+    border-radius: 0.25rem !important; /* 4px */
+  }
 }
