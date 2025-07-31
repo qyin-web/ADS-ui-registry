@@ -135,9 +135,9 @@ export function BrandHeader() {
             </div>
           </Button>
 
-          <Avatar className="size-8 ml-2">
-            <AvatarFallback className="bg-orange-500 text-white">
-              <span className="text-xs font-medium">QY</span>
+          <Avatar className="size-6 ml-2 cursor-pointer select-none hover:ring-4 hover:ring-muted">
+            <AvatarFallback className="bg-chart-3 text-foreground">
+              <span className="text-[10px] font-medium">QY</span>
             </AvatarFallback>
           </Avatar>
         </div>
@@ -148,9 +148,9 @@ export function BrandHeader() {
               <SearchIcon label="Search" />
             </div>
           </Button>
-          <Avatar className="size-8">
-            <AvatarFallback className="bg-orange-500 text-white">
-              <span className="text-xs font-medium">QY</span>
+          <Avatar className="size-6 cursor-pointer select-none hover:ring-4 hover:ring-muted">
+            <AvatarFallback className="bg-chart-3 text-foreground">
+              <span className="text-[10px] font-medium">QY</span>
             </AvatarFallback>
           </Avatar>
         </div>
