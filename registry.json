@@ -164,9 +164,8 @@
       "description": "A styled, simple, reusable header",
       "registryDependencies": [
         "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
-        "input",
-        "avatar",
-        "sidebar",
+        "https://shadcn-ui-registry-starter-five.vercel.app/r/input.json",
+        "https://shadcn-ui-registry-starter-five.vercel.app/r/avatar.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/sonner.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/logo.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
