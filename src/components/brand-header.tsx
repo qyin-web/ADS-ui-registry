@@ -69,34 +69,19 @@ export function BrandHeader() {
 
         {/* Center section - Flexible search bar and Create button */}
         <div className="hidden items-center space-x-2 md:flex flex-1 justify-center">
-          {isSearchOpen ? (
-            <div className="flex-1 max-w-[780px] flex items-center bg-background border border-input rounded h-10 focus-within:shadow-[0px_8px_12px_rgba(23,43,77,0.15),0px_0px_1px_rgba(23,43,77,0.31)] focus-within:border-none">
-              <div className="flex items-center text-muted-foreground pl-5 pr-4">
-                <SearchIcon label="Search" />
-              </div>
-              <input
-                type="text"
-                placeholder="Search"
-                className="flex-1 bg-transparent outline-none text-sm placeholder:text-muted-foreground"
-                autoFocus
-                onBlur={() => setIsSearchOpen(false)}
-              />
+          <div className="flex-1 max-w-[780px] flex items-center bg-background border border-input rounded h-10 focus-within:shadow-[0px_8px_12px_rgba(23,43,77,0.15),0px_0px_1px_rgba(23,43,77,0.31)] focus-within:border-none">
+            <div className="flex items-center text-muted-foreground pl-5 pr-4">
+              <Search className="size-4" />
             </div>
-          ) : (
-            <div className="relative flex-1 max-w-[780px]">
-              <Button
-                variant="outline"
-                size="sm"
-                className="w-full justify-start text-muted-foreground hover:bg-muted h-8 pl-0 gap-0"
-                onClick={() => setIsSearchOpen(true)}
-              >
-                <div className="px-2 flex items-center">
-                  <SearchIcon label="Search" />
-                </div>
-                Search
-              </Button>
-            </div>
-          )}
+            <input
+              type="text"
+              placeholder="Search"
+              className="flex-1 bg-transparent outline-none text-sm placeholder:text-muted-foreground"
+              autoFocus={isSearchOpen}
+              onFocus={() => setIsSearchOpen(true)}
+              onBlur={() => setIsSearchOpen(false)}
+            />
+          </div>
 
           <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 h-8">
             <div className="size-4">
