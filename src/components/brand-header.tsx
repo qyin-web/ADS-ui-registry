@@ -69,10 +69,10 @@ export function BrandHeader() {
 
         {/* Center section - Flexible search bar and Create button */}
         <div className="hidden items-center space-x-2 md:flex flex-1 justify-center">
-          <div className="flex-1 max-w-[780px] flex items-center bg-background border border-input rounded h-10 focus-within:shadow-[0px_8px_12px_rgba(23,43,77,0.15),0px_0px_1px_rgba(23,43,77,0.31)] focus-within:border-none">
-            <div className="flex items-center text-muted-foreground pl-5 pr-4">
-              <Search className="size-4" />
-            </div>
+          <div className={`flex-1 max-w-[780px] flex items-center bg-background border border-input rounded focus-within:shadow-[0px_8px_12px_rgba(23,43,77,0.15),0px_0px_1px_rgba(23,43,77,0.31)] focus-within:border-none ${isSearchOpen ? 'h-10' : 'h-8'}`}>
+                          <div className={`flex items-center text-muted-foreground ${isSearchOpen ? 'pl-5 pr-4' : 'pl-2 pr-2'}`}>
+                <Search className="size-4" />
+              </div>
             <input
               type="text"
               placeholder="Search"
