@@ -1,5 +1,6 @@
 import { BrandHeader } from "@/components/brand-header";
 import { SidebarProvider } from "@/components/ui/sidebar";
+import { Button } from "@/components/ui/button";
 
 export default function BlankPage() {
   return (
@@ -13,12 +14,12 @@ export default function BlankPage() {
               This is your Confluence workspace. Start creating pages, collaborating with your team, and organizing your work.
             </p>
             <div className="flex gap-4 justify-center mt-6">
-              <div className="bg-[#0052CC] text-white px-4 py-2 rounded-[3px] text-sm font-medium">
+              <Button variant="default" size="sm" className="bg-[#0052CC] text-white hover:bg-[#0052CC]/90">
                 Create Page
-              </div>
-              <div className="border border-[#DFE1E6] text-[#172B4D] px-4 py-2 rounded-[3px] text-sm font-medium">
+              </Button>
+              <Button variant="outline" size="sm" className="text-[#172B4D] hover:bg-muted">
                 Browse Spaces
-              </div>
+              </Button>
             </div>
           </div>
         </div>
