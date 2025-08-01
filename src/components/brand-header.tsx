@@ -70,27 +70,27 @@ export function BrandHeader() {
         {/* Center section - Flexible search bar and Create button */}
         <div className="hidden items-center space-x-2 md:flex flex-1 justify-center">
           {isSearchOpen ? (
-            <div className="relative flex-1 max-w-[780px]">
-              <Input
+            <div className="flex-1 max-w-[780px] flex items-center bg-background border border-input rounded h-10 focus-within:shadow-[0px_8px_12px_rgba(23,43,77,0.15),0px_0px_1px_rgba(23,43,77,0.31)] focus-within:border-none">
+              <div className="flex items-center text-muted-foreground pl-5 pr-4">
+                <SearchIcon label="Search" />
+              </div>
+              <input
                 type="text"
                 placeholder="Search"
-                className="w-full pl-9 h-10 rounded border-none focus-visible:shadow-[0px_8px_12px_rgba(23,43,77,0.15),0px_0px_1px_rgba(23,43,77,0.31)]"
+                className="flex-1 bg-transparent outline-none text-sm placeholder:text-muted-foreground"
                 autoFocus
                 onBlur={() => setIsSearchOpen(false)}
               />
-              <div className="absolute left-3 top-0 bottom-0 flex items-center text-muted-foreground">
-                <SearchIcon label="Search" />
-              </div>
             </div>
           ) : (
             <div className="relative flex-1 max-w-[780px]">
               <Button
                 variant="outline"
                 size="sm"
-                className="w-full justify-start text-muted-foreground hover:bg-muted h-9"
+                className="w-full justify-start text-muted-foreground hover:bg-muted h-9 pl-0 gap-0"
                 onClick={() => setIsSearchOpen(true)}
               >
-                <div className="size-4 mr-2">
+                <div className="px-2 flex items-center">
                   <SearchIcon label="Search" />
                 </div>
                 Search
