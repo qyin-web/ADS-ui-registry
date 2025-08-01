@@ -14,6 +14,13 @@
   --ads-neutral-800: #253858;
   --ads-neutral-900: #172B4D;
 
+  /* Neutral Alpha Colors */
+  --ads-neutral-100A: #091E4208;
+  --ads-neutral-200A: #091E420F;
+  --ads-neutral-300A: #091E4224;
+  --ads-neutral-400A: #091E424F;
+  --ads-neutral-500A: #091E427D;
+
   /* Brand Colors (Blue) */
   --ads-brand-50: #DEEBFF;
   --ads-brand-100: #B3D4FF;
@@ -61,12 +68,19 @@
   --ads-color-background-secondary: var(--ads-neutral-50);
   --ads-color-background-subtle: var(--ads-neutral-100);
   --ads-color-background-inverse: var(--ads-neutral-900);
+  --ads-color-background-neutral: var(--ads-neutral-200A);
+  --ads-color-background-neutral-hovered: var(--ads-neutral-300A);
+  --ads-color-background-neutral-pressed: var(--ads-neutral-400A);
+  --ads-color-background-neutral-subtle: transparent;
+  --ads-color-background-neutral-subtle-hovered: var(--ads-neutral-200A);
+  --ads-color-background-neutral-subtle-pressed: var(--ads-neutral-300A);
 
   /* Text Colors */
   --ads-color-text: var(--ads-neutral-900);
   --ads-color-text-subtle: var(--ads-neutral-600);
   --ads-color-text-inverse: var(--ads-neutral-0);
   --ads-color-text-disabled: var(--ads-neutral-400);
+  --ads-color-text-disabled-subtle: var(--ads-neutral-200A);
 
   /* Link Colors */
   --ads-color-link: var(--ads-brand-400);
@@ -77,6 +91,8 @@
   --ads-color-border: var(--ads-neutral-200);
   --ads-color-border-bold: var(--ads-neutral-300);
   --ads-color-border-focus: var(--ads-brand-400);
+  --ads-color-border-disabled: var(--ads-neutral-200A);
+  --ads-color-border-subtle: var(--ads-neutral-100A);
 
   /* Status Colors */
   --ads-color-success: var(--ads-success-400);
@@ -111,7 +127,7 @@
   --secondary-foreground: var(--ads-color-text);
 
   /* Muted Colors */
-  --muted: var(--ads-color-background-subtle);
+  --muted: var(--ads-color-background-neutral-subtle-hovered);
   --muted-foreground: var(--ads-color-text-subtle);
 
   /* Accent Colors */
