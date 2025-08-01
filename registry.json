@@ -589,14 +589,12 @@
       "title": "Input",
       "description": "Displays a form input field or a component that looks like an input field.",
       "registryDependencies": [
-        "input",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
+          "path": "src/components/ui/input.tsx",
+          "type": "registry:component"
         }
       ]
     },
