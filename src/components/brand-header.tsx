@@ -87,7 +87,7 @@ export function BrandHeader() {
               <Button
                 variant="outline"
                 size="sm"
-                className="w-full justify-start text-muted-foreground hover:bg-muted h-9 pl-0 gap-0"
+                className="w-full justify-start text-muted-foreground hover:bg-muted h-8 pl-0 gap-0"
                 onClick={() => setIsSearchOpen(true)}
               >
                 <div className="px-2 flex items-center">
