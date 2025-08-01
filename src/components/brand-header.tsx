@@ -74,11 +74,11 @@ export function BrandHeader() {
               <Input
                 type="text"
                 placeholder="Search"
-                className="h-9 w-full pl-9"
+                className="w-full pl-9 h-10 rounded border-none focus-visible:shadow-[0px_8px_12px_rgba(23,43,77,0.15),0px_0px_1px_rgba(23,43,77,0.31)]"
                 autoFocus
                 onBlur={() => setIsSearchOpen(false)}
               />
-              <div className="absolute top-2.5 left-3 size-4 text-muted-foreground">
+              <div className="absolute left-3 top-0 bottom-0 flex items-center text-muted-foreground">
                 <SearchIcon label="Search" />
               </div>
             </div>
