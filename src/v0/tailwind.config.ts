@@ -20,6 +20,7 @@ const config: Config = {
         "popover-foreground": "var(--popover-foreground)",
 
         primary: "var(--primary)",
+        "primary-hover": "var(--primary-hover)",
         "primary-foreground": "var(--primary-foreground)",
 
         secondary: "var(--secondary)",
