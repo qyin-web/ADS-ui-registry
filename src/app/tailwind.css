@@ -9,6 +9,7 @@
   --color-foreground: var(--foreground);
 
   --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
   --color-primary-foreground: var(--primary-foreground);
 
   --color-secondary: var(--secondary);
@@ -68,6 +69,8 @@
   .text-balance {
     text-wrap: balance;
   }
+  
+
 }
 
 @layer base {

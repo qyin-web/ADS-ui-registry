@@ -14,10 +14,10 @@ export default function BlankPage() {
               This is your Confluence workspace. Start creating pages, collaborating with your team, and organizing your work.
             </p>
             <div className="flex gap-4 justify-center mt-6">
-              <Button variant="default" size="sm" className="bg-[#0052CC] text-white hover:bg-[#0052CC]/90">
+              <Button variant="default" size="sm">
                 Create Page
               </Button>
-              <Button variant="outline" size="sm" className="text-[#172B4D] hover:bg-muted">
+              <Button variant="outline" size="sm">
                 Browse Spaces
               </Button>
             </div>

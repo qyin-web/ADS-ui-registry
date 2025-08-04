@@ -24,12 +24,16 @@
   --ads-neutral-500A: #091E427D;
 
   /* Brand Colors (Blue) */
-  --ads-brand-50: #DEEBFF;
-  --ads-brand-100: #B3D4FF;
-  --ads-brand-200: #4C9AFF;
-  --ads-brand-300: #2684FF;
-  --ads-brand-400: #0052CC;
-  --ads-brand-500: #0747A6;
+  --ads-blue-100: #E9F2FF;
+  --ads-blue-200: #CCE0FF;
+  --ads-blue-300: #85B8FF;
+  --ads-blue-400: #579DFF;
+  --ads-blue-500: #388BFF;
+  --ads-blue-600: #1D7AFC;
+  --ads-blue-700: #0C66E4;
+  --ads-blue-800: #0055CC;
+  --ads-blue-900: #09326C;
+  --ads-blue-1000: #1C2B41;
 
   /* Success Colors (Green) */
   --ads-success-50: #E3FCEF;
@@ -78,21 +82,22 @@
   --ads-color-background-neutral-subtle-pressed: var(--ads-neutral-300A);
 
   /* Text Colors */
-  --ads-color-text: var(--ads-neutral-900);
+  --ads-color-text: var(--ads-neutral-1000);
   --ads-color-text-subtle: var(--ads-neutral-800);
+  --ads-color-text-subtlest: var(--ads-neutral-700);
   --ads-color-text-inverse: var(--ads-neutral-0);
   --ads-color-text-disabled: var(--ads-neutral-400);
   --ads-color-text-disabled-subtle: var(--ads-neutral-200A);
 
   /* Link Colors */
-  --ads-color-link: var(--ads-brand-400);
-  --ads-color-link-pressed: var(--ads-brand-500);
+  --ads-color-link: var(--ads-blue-400);
+  --ads-color-link-pressed: var(--ads-blue-500);
   --ads-color-link-visited: var(--ads-discovery-400);
 
   /* Border Colors */
   --ads-color-border: var(--ads-neutral-300A);
   --ads-color-border-bold: var(--ads-neutral-300);
-  --ads-color-border-focus: var(--ads-brand-400);
+  --ads-color-border-focus: var(--ads-blue-400);
   --ads-color-border-disabled: var(--ads-neutral-200A);
   --ads-color-border-subtle: var(--ads-neutral-100A);
 
@@ -100,11 +105,27 @@
   --ads-color-success: var(--ads-success-400);
   --ads-color-warning: var(--ads-warning-400);
   --ads-color-danger: var(--ads-danger-400);
-  --ads-color-info: var(--ads-brand-400);
+  --ads-color-info: var(--ads-blue-400);
 
   /* Accent Colors */
-  --ads-color-accent: var(--ads-brand-100);
-  --ads-color-accent-bold: var(--ads-brand-200);
+  --ads-color-accent: var(--ads-blue-100);
+  --ads-color-accent-bold: var(--ads-blue-200);
+
+  /* Brand Background Colors */
+  /* Subtlest Emphasis - Use for elements with less emphasis */
+  --ads-color-background-brand-subtlest: var(--ads-blue-100);
+  --ads-color-background-brand-subtlest-hovered: var(--ads-blue-200);
+  --ads-color-background-brand-subtlest-pressed: var(--ads-blue-300);
+
+  /* Bold Emphasis - Use for elements with more emphasis */
+  --ads-color-background-brand-bold: var(--ads-blue-700);
+  --ads-color-background-brand-bold-hovered: var(--ads-blue-800);
+  --ads-color-background-brand-bold-pressed: var(--ads-blue-900);
+
+  /* Boldest Emphasis - Use for elements that need to stand out a lot */
+  --ads-color-background-brand-boldest: var(--ads-blue-1000);
+  --ads-color-background-brand-boldest-hovered: var(--ads-blue-900);
+  --ads-color-background-brand-boldest-pressed: var(--ads-blue-800);
 
   /* ===== SHADCN/UI COMPATIBILITY LAYER ===== */
   
@@ -121,7 +142,8 @@
   --popover-foreground: var(--ads-color-text);
 
   /* Primary Colors */
-  --primary: var(--ads-color-link);
+  --primary: var(--ads-color-background-brand-bold);
+  --primary-hover: var(--ads-color-background-brand-bold-hovered);
   --primary-foreground: var(--ads-color-background);
 
   /* Secondary Colors */
@@ -146,7 +168,7 @@
   --ring: var(--ads-color-link);
 
   /* Chart Colors */
-  --chart-1: var(--ads-brand-400);
+  --chart-1: var(--ads-blue-400);
   --chart-2: var(--ads-success-400);
   --chart-3: var(--ads-warning-400);
   --chart-4: var(--ads-danger-400);
@@ -207,7 +229,7 @@
   /* Dark Mode Border Colors */
   --ads-color-border: var(--ads-neutral-200);
   --ads-color-border-bold: var(--ads-neutral-300);
-  --ads-color-border-focus: var(--ads-brand-300);
+  --ads-color-border-focus: var(--ads-blue-300);
 
   /* Dark Mode Sidebar Colors */
   --sidebar: var(--ads-color-background-secondary);

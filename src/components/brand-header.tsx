@@ -83,7 +83,7 @@ export function BrandHeader() {
             />
           </div>
 
-          <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 h-8">
+          <Button variant="default" size="sm" className="bg-primary text-primary-foreground h-8">
             <div className="size-4">
               <AddIcon label="Create" />
             </div>
