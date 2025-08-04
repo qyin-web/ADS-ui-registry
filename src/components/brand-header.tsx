@@ -27,7 +27,7 @@ export function BrandHeader() {
     <header className="fixed top-0 left-0 z-50 w-full border-b border-border bg-background">
       <div className="flex h-12 items-center justify-between px-3 gap-2">
         {/* Left section - Sidebar, App Switcher, Logo (300px width) */}
-        <div className="flex items-center space-x-1 w-[300px]">
+        <div className="flex items-center gap-1 w-[300px]">
           {/* Sidebar Collapse Button */}
           <Button
             variant="ghost"
@@ -61,8 +61,8 @@ export function BrandHeader() {
             <Menu className="size-4" />
           </Button>
 
-          {/* Logo with 8px spacing (ml-2 = 8px) */}
-          <Link href="/" className="flex items-center ml-2 p-1 hover:bg-muted rounded">
+          {/* Logo with 4px margin to test spacing */}
+          <Link href="/" className="flex items-center ml-1 p-1 hover:bg-muted rounded">
             <Logo />
           </Link>
         </div>
