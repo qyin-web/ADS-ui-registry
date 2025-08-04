@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export default function BlankPage() {
   return (
     <SidebarProvider>
-      <div className="flex flex-col h-screen">
+      <div className="flex flex-col h-screen overflow-hidden">
         <BrandHeader />
         <div className="flex-1 flex flex-col items-center gap-4 p-8 pt-16 overflow-y-auto">
           <div className="text-center space-y-4">
