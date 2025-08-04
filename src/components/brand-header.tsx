@@ -61,8 +61,8 @@ export function BrandHeader() {
             <Menu className="size-4" />
           </Button>
 
-          {/* Logo with 4px spacing (ml-1 = 4px) */}
-          <Link href="/" className="flex items-center ml-1 p-1 hover:bg-muted rounded">
+          {/* Logo with 8px spacing (ml-2 = 8px) */}
+          <Link href="/" className="flex items-center ml-2 p-1 hover:bg-muted rounded">
             <Logo />
           </Link>
         </div>

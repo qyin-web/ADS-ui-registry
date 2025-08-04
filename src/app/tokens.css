@@ -1,18 +1,20 @@
 :root {
   /* ===== ADS COLOR PALETTE (Layer 1) ===== */
   
-  /* Neutral Colors */
+  /* Neutral Colors - Manually added */
   --ads-neutral-0: #FFFFFF;
-  --ads-neutral-50: #FAFBFC;
-  --ads-neutral-100: #F4F5F7;
-  --ads-neutral-200: #EBECF0;
-  --ads-neutral-300: #DFE1E6;
-  --ads-neutral-400: #C1C7D0;
-  --ads-neutral-500: #97A0AF;
-  --ads-neutral-600: #6B778C;
-  --ads-neutral-700: #42526E;
-  --ads-neutral-800: #253858;
-  --ads-neutral-900: #172B4D;
+  --ads-neutral-100: #F7F8F9;
+  --ads-neutral-200: #F1F2F4;
+  --ads-neutral-300: #DCDFE4;
+  --ads-neutral-400: #B3B9C4;
+  --ads-neutral-500: #8590A2;
+  --ads-neutral-600: #758195;
+  --ads-neutral-700: #626F86;
+  --ads-neutral-800: #44546F;
+  --ads-neutral-900: #2C3E5D;
+  --ads-neutral-1000: #172B4D;
+  --ads-neutral-1100: #091E42;
+
 
   /* Neutral Alpha Colors */
   --ads-neutral-100A: #091E4208;
@@ -77,7 +79,7 @@
 
   /* Text Colors */
   --ads-color-text: var(--ads-neutral-900);
-  --ads-color-text-subtle: var(--ads-neutral-600);
+  --ads-color-text-subtle: var(--ads-neutral-800);
   --ads-color-text-inverse: var(--ads-neutral-0);
   --ads-color-text-disabled: var(--ads-neutral-400);
   --ads-color-text-disabled-subtle: var(--ads-neutral-200A);
@@ -88,7 +90,7 @@
   --ads-color-link-visited: var(--ads-discovery-400);
 
   /* Border Colors */
-  --ads-color-border: var(--ads-neutral-200);
+  --ads-color-border: var(--ads-neutral-300A);
   --ads-color-border-bold: var(--ads-neutral-300);
   --ads-color-border-focus: var(--ads-brand-400);
   --ads-color-border-disabled: var(--ads-neutral-200A);
