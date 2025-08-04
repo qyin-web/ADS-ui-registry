@@ -68,7 +68,7 @@ export function BrandHeader() {
         </div>
 
         {/* Center section - Flexible search bar and Create button */}
-        <div className="hidden items-center space-x-2 md:flex flex-1 justify-center">
+        <div className="hidden items-center gap-2 md:flex flex-1 justify-center">
           <div className={`flex-1 max-w-[780px] flex items-center bg-background border border-input rounded focus-within:shadow-[0px_8px_12px_rgba(23,43,77,0.15),0px_0px_1px_rgba(23,43,77,0.31)] focus-within:border-none ${isSearchOpen ? 'h-10' : 'h-8'}`}>
                           <div className={`flex items-center text-muted-foreground ${isSearchOpen ? 'pl-5 pr-4' : 'pl-2 pr-2'}`}>
                 <Search className="size-4" />
@@ -92,7 +92,7 @@ export function BrandHeader() {
         </div>
 
         {/* Right button group - 300px width with specific buttons */}
-        <div className="hidden items-center space-x-1 md:flex w-[300px] justify-end">
+        <div className="hidden items-center gap-1 md:flex w-[300px] justify-end">
           <Button variant="outline" size="sm" className="text-foreground hover:bg-muted h-8">
             <div className="size-4">
               <RovoChatIcon label="Rovo chat" />
