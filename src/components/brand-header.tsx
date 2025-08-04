@@ -95,9 +95,9 @@ export function BrandHeader() {
         <div className="hidden items-center gap-1 md:flex w-[300px] justify-end">
           <Button variant="outline" size="sm" className="text-foreground hover:bg-muted h-8">
             <div className="size-4">
-              <RovoChatIcon label="Rovo chat" />
+              <RovoChatIcon label="Rovo Chat" />
             </div>
-            Rovo chat
+            Rovo Chat
           </Button>
 
           <Button
