@@ -1,13 +1,13 @@
 import TestPage from "@/app/demo/[name]/blocks/test-page";
-import ShellLayout from "@/app/demo/[name]/blocks/shell-layout";
+import MinimalLayout from "@/app/demo/[name]/blocks/minimal-layout";
 
 export const test = {
   name: "test",
   components: {
     Default: (
-      <ShellLayout>
+      <MinimalLayout>
         <TestPage />
-      </ShellLayout>
+      </MinimalLayout>
     ),
   },
 }; 
