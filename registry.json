@@ -155,6 +155,7 @@
         "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/input.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/avatar.json",
+        "https://shadcn-ui-registry-starter-five.vercel.app/r/brand-sidebar.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/sonner.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/logo.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
@@ -184,7 +185,7 @@
       "registryDependencies": [
         "badge",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
-        "sidebar",
+        "https://shadcn-ui-registry-starter-five.vercel.app/r/brand-sidebar.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/sonner.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
       ],
