@@ -2,7 +2,7 @@ export default function DashboardPage() {
   return (
     <div className="max-w-4xl mx-auto space-y-8">
       <div className="space-y-4">
-        <h1 className="text-3xl font-bold text-[#172B4D]">Confluence Dashboard</h1>
+        <h1 className="text-3xl font-bold text-[#172B4D]">Confluence Dashboard (Updated)</h1>
         <p className="text-[#6B778C]">
           Welcome to your Confluence workspace. Here you can manage your spaces, pages, and team collaboration.
         </p>
