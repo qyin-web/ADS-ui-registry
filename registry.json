@@ -107,13 +107,12 @@
       "description": "A simple test block to verify V0 block creation",
       "registryDependencies": [
         "https://shadcn-ui-registry-starter-five.vercel.app/r/sonner.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/brand-header.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/brand-sidebar.json",
+        "https://shadcn-ui-registry-starter-five.vercel.app/r/logo.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
       ],
       "files": [
         {
-          "path": "src/v0/shell-layout.tsx",
+          "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
