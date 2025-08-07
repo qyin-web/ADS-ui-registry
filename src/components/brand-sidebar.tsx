@@ -295,7 +295,7 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      <div className="size-4">
+                      <div className={item.title === "Company hub" || item.title === "Jira" ? "size-5 flex items-center justify-center" : "size-4"}>
                         {item.icon}
                       </div>
                       <span>{item.title}</span>
