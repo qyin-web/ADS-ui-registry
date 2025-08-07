@@ -179,7 +179,7 @@
   --sidebar-foreground: var(--ads-color-text);
   --sidebar-primary: var(--ads-color-link);
   --sidebar-primary-foreground: var(--ads-color-background);
-  --sidebar-accent: var(--ads-color-accent);
+  --sidebar-accent: var(--ads-color-background-neutral-subtle-hovered);
   --sidebar-accent-foreground: var(--ads-color-text);
   --sidebar-border: var(--ads-color-border);
   --sidebar-ring: var(--ads-color-link);
@@ -236,7 +236,7 @@
   --sidebar-foreground: var(--ads-color-text);
   --sidebar-primary: var(--ads-color-link);
   --sidebar-primary-foreground: var(--ads-color-background);
-  --sidebar-accent: var(--ads-color-accent);
+  --sidebar-accent: var(--ads-color-background-neutral-subtle-hovered);
   --sidebar-accent-foreground: var(--ads-color-text);
   --sidebar-border: var(--ads-color-border);
   --sidebar-ring: var(--ads-color-link);

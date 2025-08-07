@@ -11,6 +11,22 @@ import {
   MoreHorizontal,
   Plus,
   Table,
+  User,
+  Star,
+  Globe,
+  Grid3X3,
+  Users,
+  Search,
+  BookOpen,
+  Calendar,
+  Building,
+  ExternalLink,
+  Volume2,
+  ChevronRight,
+  ChevronDown,
+  Brain,
+  FileText,
+  Link as LinkIcon,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -24,6 +40,7 @@ import {
   SidebarGroupContent,
   SidebarHeader,
   SidebarMenu,
+  SidebarMenuAction,
   SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -31,6 +48,21 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { cn } from "@/lib/utils";
+import Blog24Icon from '@atlaskit/icon-object/glyph/blog/24';
+import PersonIcon from '@atlaskit/icon/core/person';
+import ClockIcon from '@atlaskit/icon/core/clock';
+import StarUnstarredIcon from '@atlaskit/icon/core/star-unstarred';
+import GlobeIcon from '@atlaskit/icon/core/globe';
+import AppsIcon from '@atlaskit/icon/core/apps';
+import TeamsIcon from '@atlaskit/icon/core/teams';
+import ShortcutIcon from '@atlaskit/icon/core/shortcut';
+import PagesIcon from '@atlaskit/icon/core/pages';
+import QuotationMarkIcon from '@atlaskit/icon/core/quotation-mark';
+import CalendarIcon from '@atlaskit/icon/core/calendar';
+import AddIcon from '@atlaskit/icon/core/add';
+import OfficeBuildingIcon from '@atlaskit/icon/core/migration/office-building--office-building-filled';
+import { JiraIcon } from '@atlaskit/logo';
+import ShowMoreHorizontalIcon from '@atlaskit/icon/core/show-more-horizontal';
 
 interface NavItem {
   title: string;
@@ -39,6 +71,8 @@ interface NavItem {
   badge?: {
     text: string;
   };
+  showChevron?: boolean;
+  showOverflow?: boolean;
 }
 
 interface SidebarProps {
@@ -56,71 +90,102 @@ export function BrandSidebar({
   const { state } = useSidebar();
   const isCollapsed = state === "collapsed";
 
-  const mainNavItems: NavItem[] = [
+  const topNavItems: NavItem[] = [
     {
-      title: "Home",
-      href: "#",
-      icon: <Home className="size-4" />,
+      title: "For you",
+      href: "#for-you",
+      icon: <PersonIcon label="For you" />,
     },
     {
-      title: "Projects",
-      href: "#projects",
-      icon: <LayoutGrid className="size-4" />,
+      title: "Recent",
+      href: "#recent",
+      icon: <ClockIcon label="Recent" />,
+      showChevron: true,
     },
     {
-      title: "Databases",
-      href: "#databases",
-      icon: <Database className="size-4" />,
+      title: "Starred",
+      href: "#starred",
+      icon: <StarUnstarredIcon label="Starred" />,
+      showChevron: true,
     },
     {
-      title: "Tables",
-      href: "#tables",
-      icon: <Table className="size-4" />,
-      badge: {
-        text: "Beta",
-      },
+      title: "Spaces",
+      href: "#spaces",
+      icon: <GlobeIcon label="Spaces" />,
+      showChevron: true,
     },
     {
-      title: "AI",
-      href: "#ai",
-      icon: <MessageSquareText className="size-4" />,
-      badge: {
-        text: "Alpha",
-      },
+      title: "Apps",
+      href: "#apps",
+      icon: <AppsIcon label="Apps" />,
+    },
+    {
+      title: "Teams",
+      href: "#teams",
+      icon: <TeamsIcon label="Teams" />,
     },
   ];
 
-  const toolsNavItems: NavItem[] = [
+  const contentNavItems: NavItem[] = [
     {
-      title: "Alerts",
-      href: "#alerts",
-      icon: <AlertTriangle className="size-4" />,
+      title: "Qiao's Confluence UI kit",
+      href: "#test",
+      icon: <Blog24Icon label="Qiao's Confluence UI kit" />,
+      showOverflow: true,
     },
     {
-      title: "Analytics",
-      href: "#analytics",
-      icon: <BarChart2 className="size-4" />,
+      title: "Shortcuts",
+      href: "#shortcuts",
+      icon: <ShortcutIcon label="Shortcuts" />,
     },
     {
-      title: "History",
-      href: "#history",
-      icon: <Clock className="size-4" />,
+      title: "Content",
+      href: "#content",
+      icon: <PagesIcon label="Content" />,
+    },
+    {
+      title: "Create",
+      href: "#create",
+      icon: <AddIcon label="Create" />,
+    },
+    {
+      title: "Blogs",
+      href: "#blogs",
+      icon: <QuotationMarkIcon label="Blogs" />,
+    },
+    {
+      title: "Calendars",
+      href: "#calendars",
+      icon: <CalendarIcon label="Calendars" />,
+    },
+  ];
+
+  const bottomNavItems: NavItem[] = [
+    {
+      title: "Company hub",
+      href: "#company-hub",
+      icon: <OfficeBuildingIcon label="Company hub" />,
+    },
+    {
+      title: "Jira",
+      href: "#jira",
+      icon: <JiraIcon size="small" appearance="brand" shouldUseNewLogoDesign />,
     },
     {
       title: "More",
       href: "#more",
-      icon: <MoreHorizontal className="size-4" />,
+      icon: <ShowMoreHorizontalIcon label="More" />,
     },
   ];
 
   return (
-    <Sidebar variant="sidebar" collapsible="icon" className="mt-16">
+    <Sidebar variant="sidebar" collapsible="icon" className="mt-12">
       <SidebarContent>
-        {/* Main Nav Items */}
+        {/* Top Navigation */}
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {mainNavItems.map((item) => (
+              {topNavItems.map((item) => (
                 <SidebarMenuItem key={item.href}>
                   <SidebarMenuButton
                     asChild
@@ -133,6 +198,9 @@ export function BrandSidebar({
                     <Link href={item.href}>
                       {item.icon}
                       <span>{item.title}</span>
+                      {item.showChevron && (
+                        <ChevronRight className="size-4 ml-auto" />
+                      )}
                     </Link>
                   </SidebarMenuButton>
                   {item.badge && (
@@ -146,11 +214,41 @@ export function BrandSidebar({
 
         <SidebarSeparator />
 
-        {/* Tools Nav Items */}
+        {/* Content Navigation */}
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {toolsNavItems.map((item) => (
+              {contentNavItems.map((item) => (
+                <SidebarMenuItem key={item.href}>
+                  <SidebarMenuButton
+                    asChild
+                    isActive={pathname === item.href}
+                    tooltip={item.title}
+                  >
+                    <Link href={item.href}>
+                      {item.icon}
+                      <span>{item.title}</span>
+                      {item.showOverflow && (
+                        <MoreHorizontal className="size-4 ml-auto" />
+                      )}
+                    </Link>
+                  </SidebarMenuButton>
+                  {item.badge && (
+                    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                  )}
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+        <SidebarSeparator />
+
+        {/* Bottom Navigation */}
+        <SidebarGroup>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {bottomNavItems.map((item) => (
                 <SidebarMenuItem key={item.href}>
                   <SidebarMenuButton
                     asChild
@@ -170,6 +268,28 @@ export function BrandSidebar({
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+
+        {/* Search Bar */}
+        <div className="p-2">
+          <div className="relative">
+            <Search className="absolute left-2 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+            <input
+              type="text"
+              placeholder="Search by title"
+              className="w-full rounded-md border border-input bg-background px-8 py-2 text-sm"
+            />
+          </div>
+        </div>
+
+        {/* Bottom Action Buttons */}
+        <div className="p-2 border-t">
+          <Button className="w-full mb-2" variant="outline">
+            Invite people
+          </Button>
+          <Button className="w-8 h-8 p-0" variant="ghost" size="icon">
+            <Volume2 className="size-4" />
+          </Button>
+        </div>
       </SidebarContent>
     </Sidebar>
   );
