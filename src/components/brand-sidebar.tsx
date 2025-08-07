@@ -228,7 +228,7 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      <div className="size-4">
+                      <div className={item.title === "Qiao's Confluence UI kit" ? "size-6 flex items-center justify-center" : "size-4"}>
                         {item.icon}
                       </div>
                       <span>{item.title}</span>
