@@ -251,7 +251,7 @@
   --primary: var(--ads-color-link);
   --primary-foreground: var(--ads-color-background);
   --secondary: var(--ads-color-background-secondary);
-  --secondary-foreground: var(--ads-color-text);
+  --secondary-foreground: var(--ads-color-text-subtle);
   --muted: var(--ads-color-background-subtle);
   --muted-foreground: var(--ads-color-text-subtle);
   --accent: var(--ads-color-accent);

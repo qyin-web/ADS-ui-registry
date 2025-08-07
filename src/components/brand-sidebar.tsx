@@ -63,6 +63,7 @@ import AddIcon from '@atlaskit/icon/core/add';
 import OfficeBuildingIcon from '@atlaskit/icon/core/migration/office-building--office-building-filled';
 import { JiraIcon } from '@atlaskit/logo';
 import ShowMoreHorizontalIcon from '@atlaskit/icon/core/show-more-horizontal';
+import LinkExternalIcon from '@atlaskit/icon/core/link-external';
 
 interface NavItem {
   title: string;
@@ -165,11 +166,13 @@ export function BrandSidebar({
       title: "Company hub",
       href: "#company-hub",
       icon: <OfficeBuildingIcon label="Company hub" />,
+      showChevron: true,
     },
     {
       title: "Jira",
       href: "#jira",
       icon: <JiraIcon size="small" appearance="brand" shouldUseNewLogoDesign />,
+      showChevron: true,
     },
     {
       title: "More",
@@ -282,7 +285,7 @@ export function BrandSidebar({
             </SidebarGroupContent>
           </SidebarGroup>
 
-          <SidebarSeparator />
+          <SidebarSeparator className="mt-3 mb-3" />
 
           {/* Bottom Navigation */}
           <SidebarGroup className="pt-0">
@@ -300,6 +303,11 @@ export function BrandSidebar({
                           {item.icon}
                         </div>
                         <span>{item.title}</span>
+                        {item.showChevron && (
+                          <div className="ml-auto size-4 flex items-center justify-center">
+                            <LinkExternalIcon label="" size="small" />
+                          </div>
+                        )}
                       </Link>
                     </SidebarMenuButton>
                     {item.badge && (
