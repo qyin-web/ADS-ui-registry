@@ -196,7 +196,7 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      <div className="size-6 flex items-center justify-center">
+                      <div className="p-1">
                         {item.icon}
                       </div>
                       <span>{item.title}</span>
@@ -228,7 +228,7 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      <div className="size-6 flex items-center justify-center">
+                      <div className="p-1">
                         {item.icon}
                       </div>
                       <span>{item.title}</span>
@@ -263,7 +263,7 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      <div className="size-6 flex items-center justify-center">
+                      <div className="p-1">
                         {item.icon}
                       </div>
                       <span>{item.title}</span>
@@ -295,7 +295,7 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      <div className="size-6 flex items-center justify-center">
+                      <div className="p-1">
                         {item.icon}
                       </div>
                       <span>{item.title}</span>
