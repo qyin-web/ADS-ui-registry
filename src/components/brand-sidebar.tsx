@@ -215,14 +215,14 @@ export function BrandSidebar({
             </SidebarGroupContent>
           </SidebarGroup>
 
-          <SidebarSeparator />
+          <SidebarSeparator className="mt-3" />
 
           {/* Content Navigation */}
           <SidebarGroup className="pt-0 pb-0">
             <SidebarGroupContent>
               <SidebarMenu>
                 {contentNavItems.slice(0, 3).map((item) => (
-                  <SidebarMenuItem key={item.href} className={item.title === "Qiao's Confluence UI kit" ? "mb-3" : ""}>
+                  <SidebarMenuItem key={item.href} className={item.title === "Qiao's Confluence UI kit" ? "mt-3 mb-3" : ""}>
                     <SidebarMenuButton
                       asChild
                       isActive={pathname === item.href}
