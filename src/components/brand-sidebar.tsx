@@ -220,7 +220,42 @@ export function BrandSidebar({
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {contentNavItems.map((item) => (
+              {contentNavItems.slice(0, 3).map((item) => (
+                <SidebarMenuItem key={item.href}>
+                  <SidebarMenuButton
+                    asChild
+                    isActive={pathname === item.href}
+                    tooltip={item.title}
+                  >
+                    <Link href={item.href}>
+                      <div className="size-4">
+                        {item.icon}
+                      </div>
+                      <span>{item.title}</span>
+                      {item.showOverflow && (
+                        <MoreHorizontal className="size-4 ml-auto" />
+                      )}
+                    </Link>
+                  </SidebarMenuButton>
+                  {item.badge && (
+                    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                  )}
+                </SidebarMenuItem>
+              ))}
+              
+              {/* Search Bar */}
+              <div className="pt-2 pb-2 pr-0 pl-1">
+                <div className="relative">
+                  <Search className="absolute left-1 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                  <input
+                    type="text"
+                    placeholder="Search by title"
+                    className="w-full rounded-md border border-input bg-background pl-6 pr-2 py-1 text-sm"
+                  />
+                </div>
+              </div>
+              
+              {contentNavItems.slice(3).map((item) => (
                 <SidebarMenuItem key={item.href}>
                   <SidebarMenuButton
                     asChild
@@ -274,18 +309,6 @@ export function BrandSidebar({
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-
-        {/* Search Bar */}
-        <div className="p-2">
-          <div className="relative">
-            <Search className="absolute left-2 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-            <input
-              type="text"
-              placeholder="Search by title"
-              className="w-full rounded-md border border-input bg-background px-8 py-2 text-sm"
-            />
-          </div>
-        </div>
 
         {/* Bottom Action Buttons */}
         <div className="p-2 border-t">
