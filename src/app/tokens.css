@@ -148,7 +148,7 @@
 
   /* Secondary Colors */
   --secondary: var(--ads-color-background-secondary);
-  --secondary-foreground: var(--ads-color-text);
+  --secondary-foreground: var(--ads-color-text-subtle);
 
   /* Muted Colors */
   --muted: var(--ads-color-background-neutral-subtle-hovered);
