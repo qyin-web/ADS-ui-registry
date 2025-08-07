@@ -1,24 +1,22 @@
-import { BrandHeader } from "@/components/brand-header";
-import { SidebarProvider } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
 
 export default function BlankPage() {
   return (
-    <SidebarProvider>
-      <div className="flex flex-col min-h-screen">
-        <BrandHeader />
-        <div className="flex-1 flex">
-          {/* Left Sidebar Area */}
-          <div className="w-80 bg-muted/50 p-6 flex flex-col items-center justify-center">
-            <div className="text-center space-y-4">
-              <h2 className="text-lg font-semibold text-muted-foreground">Sidebar Content</h2>
-              <p className="text-sm text-muted-foreground max-w-xs">
-                This is placeholder content for the sidebar area. Navigation and tools would go here.
-              </p>
-            </div>
-          </div>
+    <div className="flex flex-col items-center justify-center min-h-screen p-8">
+      <div className="text-center space-y-4">
+        <h1 className="text-2xl font-bold text-[#172B4D]">Welcome to Confluence</h1>
+        <p className="text-[#6B778C] max-w-md">
+          This is your Confluence workspace. Start creating pages, collaborating with your team, and organizing your work.
+        </p>
+        <div className="flex gap-4 justify-center mt-6">
+          <Button variant="default" size="sm">
+            Create Page
+          </Button>
+          <Button variant="outline" size="sm">
+            Browse Spaces
+          </Button>
         </div>
       </div>
-    </SidebarProvider>
+    </div>
   );
 }

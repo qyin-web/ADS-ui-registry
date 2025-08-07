@@ -163,18 +163,6 @@ export function BrandSidebar({
 
   const bottomNavItems: NavItem[] = [
     {
-      title: "Company hub",
-      href: "#company-hub",
-      icon: <OfficeBuildingIcon label="Company hub" />,
-      showChevron: true,
-    },
-    {
-      title: "Jira",
-      href: "#jira",
-      icon: <JiraIcon size="small" appearance="brand" shouldUseNewLogoDesign />,
-      showChevron: true,
-    },
-    {
       title: "More",
       href: "#more",
       icon: <ShowMoreHorizontalIcon label="More" />,
