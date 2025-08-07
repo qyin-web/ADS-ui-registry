@@ -182,7 +182,7 @@ export function BrandSidebar({
     <Sidebar variant="sidebar" collapsible="icon" className="mt-12">
       <SidebarContent>
         {/* Top Navigation */}
-        <SidebarGroup>
+        <SidebarGroup className="pb-0">
           <SidebarGroupContent>
             <SidebarMenu>
               {topNavItems.map((item) => (
@@ -217,7 +217,7 @@ export function BrandSidebar({
         <SidebarSeparator />
 
         {/* Content Navigation */}
-        <SidebarGroup>
+        <SidebarGroup className="pt-0 pb-0">
           <SidebarGroupContent>
             <SidebarMenu>
               {contentNavItems.slice(0, 3).map((item) => (
@@ -284,7 +284,7 @@ export function BrandSidebar({
         <SidebarSeparator />
 
         {/* Bottom Navigation */}
-        <SidebarGroup>
+        <SidebarGroup className="pt-0">
           <SidebarGroupContent>
             <SidebarMenu>
               {bottomNavItems.map((item) => (
