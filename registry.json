@@ -75,7 +75,7 @@
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/demo/[name]/blocks/blank-page.tsx",
+          "path": "src/app/demo/[name]/blocks/dashboard-page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
         }
