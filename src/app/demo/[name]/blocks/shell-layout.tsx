@@ -14,7 +14,7 @@ export default function ShellLayout({
     <SidebarProvider>
       <BrandHeader />
       <BrandSidebar />
-      <main className="flex w-full justify-center">
+      <main className="flex w-full justify-center overflow-hidden">
         <div className="container">{children}</div>
       </main>
       <Toaster />
