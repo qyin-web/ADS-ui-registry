@@ -180,138 +180,140 @@ export function BrandSidebar({
 
   return (
     <Sidebar variant="sidebar" collapsible="icon" className="mt-12">
-      <SidebarContent>
-        {/* Top Navigation */}
-        <SidebarGroup className="pb-0">
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {topNavItems.map((item) => (
-                <SidebarMenuItem key={item.href}>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={
-                      pathname === item.href ||
-                      (pathname === "" && item.href === "/")
-                    }
-                    tooltip={item.title}
-                  >
-                    <Link href={item.href}>
-                      <div className="size-4">
-                        {item.icon}
-                      </div>
-                      <span>{item.title}</span>
-                      {item.showChevron && (
-                        <ChevronRight className="size-4 ml-auto" />
-                      )}
-                    </Link>
-                  </SidebarMenuButton>
-                  {item.badge && (
-                    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-                  )}
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+      <SidebarContent className="flex flex-col h-full">
+        <div className="flex-1">
+          {/* Top Navigation */}
+          <SidebarGroup className="pb-0">
+            <SidebarGroupContent>
+              <SidebarMenu>
+                {topNavItems.map((item) => (
+                  <SidebarMenuItem key={item.href}>
+                    <SidebarMenuButton
+                      asChild
+                      isActive={
+                        pathname === item.href ||
+                        (pathname === "" && item.href === "/")
+                      }
+                      tooltip={item.title}
+                    >
+                      <Link href={item.href}>
+                        <div className="size-4">
+                          {item.icon}
+                        </div>
+                        <span>{item.title}</span>
+                        {item.showChevron && (
+                          <ChevronRight className="size-4 ml-auto" />
+                        )}
+                      </Link>
+                    </SidebarMenuButton>
+                    {item.badge && (
+                      <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                    )}
+                  </SidebarMenuItem>
+                ))}
+              </SidebarMenu>
+            </SidebarGroupContent>
+          </SidebarGroup>
 
-        <SidebarSeparator />
+          <SidebarSeparator />
 
-        {/* Content Navigation */}
-        <SidebarGroup className="pt-0 pb-0">
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {contentNavItems.slice(0, 3).map((item) => (
-                <SidebarMenuItem key={item.href} className={item.title === "Qiao's Confluence UI kit" ? "mb-3" : ""}>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={pathname === item.href}
-                    tooltip={item.title}
-                  >
-                    <Link href={item.href}>
-                      <div className={item.title === "Qiao's Confluence UI kit" ? "size-6 flex items-center justify-center" : "size-4"}>
-                        {item.icon}
-                      </div>
-                      <span>{item.title}</span>
-                      {item.showOverflow && (
-                        <MoreHorizontal className="size-4 ml-auto" />
-                      )}
-                    </Link>
-                  </SidebarMenuButton>
-                  {item.badge && (
-                    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-                  )}
-                </SidebarMenuItem>
-              ))}
-              
-              {/* Search Bar */}
-              <div className="pt-2 pb-2 pr-0 pl-1">
-                <div className="relative">
-                  <Search className="absolute left-1 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                  <input
-                    type="text"
-                    placeholder="Search by title"
-                    className="w-full rounded-md border border-input bg-background pl-6 pr-2 py-1 text-sm"
-                  />
+          {/* Content Navigation */}
+          <SidebarGroup className="pt-0 pb-0">
+            <SidebarGroupContent>
+              <SidebarMenu>
+                {contentNavItems.slice(0, 3).map((item) => (
+                  <SidebarMenuItem key={item.href} className={item.title === "Qiao's Confluence UI kit" ? "mb-3" : ""}>
+                    <SidebarMenuButton
+                      asChild
+                      isActive={pathname === item.href}
+                      tooltip={item.title}
+                    >
+                      <Link href={item.href}>
+                        <div className={item.title === "Qiao's Confluence UI kit" ? "size-6 flex items-center justify-center" : "size-4"}>
+                          {item.icon}
+                        </div>
+                        <span>{item.title}</span>
+                        {item.showOverflow && (
+                          <MoreHorizontal className="size-4 ml-auto" />
+                        )}
+                      </Link>
+                    </SidebarMenuButton>
+                    {item.badge && (
+                      <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                    )}
+                  </SidebarMenuItem>
+                ))}
+                
+                {/* Search Bar */}
+                <div className="pt-2 pb-2 pr-0 pl-1">
+                  <div className="relative">
+                    <Search className="absolute left-1 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                    <input
+                      type="text"
+                      placeholder="Search by title"
+                      className="w-full rounded-md border border-input bg-background pl-6 pr-2 py-1 text-sm"
+                    />
+                  </div>
                 </div>
-              </div>
-              
-              {contentNavItems.slice(3).map((item) => (
-                <SidebarMenuItem key={item.href}>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={pathname === item.href}
-                    tooltip={item.title}
-                  >
-                    <Link href={item.href}>
-                      <div className="size-4">
-                        {item.icon}
-                      </div>
-                      <span>{item.title}</span>
-                      {item.showOverflow && (
-                        <MoreHorizontal className="size-4 ml-auto" />
-                      )}
-                    </Link>
-                  </SidebarMenuButton>
-                  {item.badge && (
-                    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-                  )}
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+                
+                {contentNavItems.slice(3).map((item) => (
+                  <SidebarMenuItem key={item.href}>
+                    <SidebarMenuButton
+                      asChild
+                      isActive={pathname === item.href}
+                      tooltip={item.title}
+                    >
+                      <Link href={item.href}>
+                        <div className="size-4">
+                          {item.icon}
+                        </div>
+                        <span>{item.title}</span>
+                        {item.showOverflow && (
+                          <MoreHorizontal className="size-4 ml-auto" />
+                        )}
+                      </Link>
+                    </SidebarMenuButton>
+                    {item.badge && (
+                      <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                    )}
+                  </SidebarMenuItem>
+                ))}
+              </SidebarMenu>
+            </SidebarGroupContent>
+          </SidebarGroup>
 
-        <SidebarSeparator />
+          <SidebarSeparator />
 
-        {/* Bottom Navigation */}
-        <SidebarGroup className="pt-0">
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {bottomNavItems.map((item) => (
-                <SidebarMenuItem key={item.href}>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={pathname === item.href}
-                    tooltip={item.title}
-                  >
-                    <Link href={item.href}>
-                      <div className={item.title === "Company hub" || item.title === "Jira" ? "size-5 flex items-center justify-center" : "size-4"}>
-                        {item.icon}
-                      </div>
-                      <span>{item.title}</span>
-                    </Link>
-                  </SidebarMenuButton>
-                  {item.badge && (
-                    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-                  )}
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+          {/* Bottom Navigation */}
+          <SidebarGroup className="pt-0">
+            <SidebarGroupContent>
+              <SidebarMenu>
+                {bottomNavItems.map((item) => (
+                  <SidebarMenuItem key={item.href}>
+                    <SidebarMenuButton
+                      asChild
+                      isActive={pathname === item.href}
+                      tooltip={item.title}
+                    >
+                      <Link href={item.href}>
+                        <div className={item.title === "Company hub" || item.title === "Jira" ? "size-5 flex items-center justify-center" : "size-4"}>
+                          {item.icon}
+                        </div>
+                        <span>{item.title}</span>
+                      </Link>
+                    </SidebarMenuButton>
+                    {item.badge && (
+                      <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                    )}
+                  </SidebarMenuItem>
+                ))}
+              </SidebarMenu>
+            </SidebarGroupContent>
+          </SidebarGroup>
+        </div>
 
-        {/* Bottom Action Buttons */}
-        <div className="p-2 border-t">
+        {/* Bottom Action Buttons - Fixed at bottom */}
+        <div className="mt-auto p-2 border-t">
           <Button className="w-full mb-2" variant="outline">
             Invite people
           </Button>
