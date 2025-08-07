@@ -196,7 +196,9 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      {item.icon}
+                      <div className="size-4">
+                        {item.icon}
+                      </div>
                       <span>{item.title}</span>
                       {item.showChevron && (
                         <ChevronRight className="size-4 ml-auto" />
@@ -226,7 +228,9 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      {item.icon}
+                      <div className="size-4">
+                        {item.icon}
+                      </div>
                       <span>{item.title}</span>
                       {item.showOverflow && (
                         <MoreHorizontal className="size-4 ml-auto" />
@@ -256,7 +260,9 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      {item.icon}
+                      <div className="size-4">
+                        {item.icon}
+                      </div>
                       <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
