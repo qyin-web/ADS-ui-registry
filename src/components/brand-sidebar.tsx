@@ -196,7 +196,7 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      <div className="size-4">
+                      <div className="size-6 flex items-center justify-center">
                         {item.icon}
                       </div>
                       <span>{item.title}</span>
@@ -221,14 +221,14 @@ export function BrandSidebar({
           <SidebarGroupContent>
             <SidebarMenu>
               {contentNavItems.slice(0, 3).map((item) => (
-                <SidebarMenuItem key={item.href}>
+                <SidebarMenuItem key={item.href} className={item.title === "Qiao's Confluence UI kit" ? "mb-3" : ""}>
                   <SidebarMenuButton
                     asChild
                     isActive={pathname === item.href}
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      <div className="size-4">
+                      <div className="size-6 flex items-center justify-center">
                         {item.icon}
                       </div>
                       <span>{item.title}</span>
@@ -263,7 +263,7 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      <div className="size-4">
+                      <div className="size-6 flex items-center justify-center">
                         {item.icon}
                       </div>
                       <span>{item.title}</span>
@@ -295,7 +295,7 @@ export function BrandSidebar({
                     tooltip={item.title}
                   >
                     <Link href={item.href}>
-                      <div className="size-4">
+                      <div className="size-6 flex items-center justify-center">
                         {item.icon}
                       </div>
                       <span>{item.title}</span>
