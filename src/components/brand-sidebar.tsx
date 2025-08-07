@@ -304,7 +304,7 @@ export function BrandSidebar({
                         </div>
                         <span>{item.title}</span>
                         {item.showChevron && (
-                          <div className="ml-auto size-3 flex items-center justify-center">
+                          <div className="ml-auto size-3">
                             <LinkExternalIcon label="" size="small" />
                           </div>
                         )}
