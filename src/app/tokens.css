@@ -183,7 +183,6 @@
   --sidebar-accent-foreground: var(--ads-color-text);
   --sidebar-border: var(--ads-color-border);
   --sidebar-ring: var(--ads-color-link);
-  --sidebar-width: 25rem;
 
   /* Design System Tokens */
   --radius: 0.25rem; /* ADS uses 4px border radius */

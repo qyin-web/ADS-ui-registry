@@ -170,7 +170,15 @@ export function BrandSidebar({
   ];
 
   return (
-    <Sidebar variant="sidebar" collapsible="icon" className="mt-12">
+    <Sidebar
+      variant="sidebar"
+      collapsible="icon"
+      className="mt-12"
+      style={{
+        '--sidebar-width': '25rem',
+        '--sidebar-width-mobile': '25rem'
+      } as React.CSSProperties}
+    >
       <SidebarContent className="flex flex-col h-full">
         <div className="flex-1">
           {/* Top Navigation */}
