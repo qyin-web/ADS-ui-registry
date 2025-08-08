@@ -172,12 +172,11 @@ export function BrandSidebar({
   return (
     <Sidebar
       variant="sidebar"
-      collapsible="icon"
+      collapsible="offcanvas"
       className="mt-12"
       style={{
         '--sidebar-width': '25rem',
         '--sidebar-width-mobile': '25rem',
-        '--sidebar-width-icon': '0',
         height: 'calc(100vh - 3rem)'
       } as React.CSSProperties}
     >
