@@ -177,6 +177,7 @@ export function BrandSidebar({
       style={{
         '--sidebar-width': '25rem',
         '--sidebar-width-mobile': '25rem',
+        '--sidebar-width-icon': '0',
         height: 'calc(100vh - 3rem)'
       } as React.CSSProperties}
     >
