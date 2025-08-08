@@ -21,13 +21,13 @@ import {
   Calendar,
   Building,
   ExternalLink,
-  Volume2,
   ChevronRight,
   ChevronDown,
   Brain,
   FileText,
   Link as LinkIcon,
 } from "lucide-react";
+import MegaphoneIcon from '@atlaskit/icon/core/megaphone';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type * as React from "react";
@@ -176,10 +176,11 @@ export function BrandSidebar({
       className="mt-12"
       style={{
         '--sidebar-width': '25rem',
-        '--sidebar-width-mobile': '25rem'
+        '--sidebar-width-mobile': '25rem',
+        height: 'calc(100vh - 3rem)'
       } as React.CSSProperties}
     >
-      <SidebarContent className="flex flex-col h-full">
+      <SidebarContent className="flex flex-col h-[calc(100vh-3rem)]">
         <div className="flex-1">
           {/* Top Navigation */}
           <SidebarGroup className="pb-0">
@@ -318,12 +319,14 @@ export function BrandSidebar({
 
         {/* Bottom Action Buttons - Fixed at bottom */}
         <div className="mt-auto p-2 border-t">
-          <Button className="w-full mb-2" variant="outline">
-            Invite people
-          </Button>
-          <Button className="w-8 h-8 p-0" variant="ghost" size="icon">
-            <Volume2 className="size-4" />
-          </Button>
+          <div className="flex gap-2">
+            <Button className="flex-1" variant="outline">
+              Invite people
+            </Button>
+            <Button className="w-8 h-8 p-0" variant="outline" size="icon">
+              <MegaphoneIcon label="" />
+            </Button>
+          </div>
         </div>
       </SidebarContent>
     </Sidebar>
