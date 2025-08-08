@@ -214,7 +214,7 @@ export function BrandSidebar({
             </SidebarGroupContent>
           </SidebarGroup>
 
-          <SidebarSeparator className="mt-3" />
+          <SidebarSeparator className="mt-3 mx-0" />
 
           {/* Content Navigation */}
           <SidebarGroup className="pt-0 pb-0">
