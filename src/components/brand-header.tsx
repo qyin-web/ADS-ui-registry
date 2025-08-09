@@ -84,9 +84,7 @@ export function BrandHeader() {
           </div>
 
           <Button variant="default">
-            <div className="size-4">
-              <AddIcon label="Create" />
-            </div>
+            <AddIcon label="Create" />
             Create
           </Button>
         </div>
