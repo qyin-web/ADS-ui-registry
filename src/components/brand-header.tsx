@@ -32,7 +32,7 @@ export function BrandHeader() {
           <Button
             variant="ghost"
             size="icon"
-            className="hidden md:flex hover:bg-muted"
+            className="hidden md:flex"
             onClick={toggleSidebar}
           >
             <div className="size-4">
@@ -44,7 +44,7 @@ export function BrandHeader() {
           <Button
             variant="ghost"
             size="icon"
-            className="hidden md:flex hover:bg-muted"
+            className="hidden md:flex"
           >
             <div className="size-4">
               <AppSwitcherIcon label="App switcher" />
@@ -83,7 +83,7 @@ export function BrandHeader() {
             />
           </div>
 
-          <Button variant="default" size="sm">
+          <Button variant="default">
             <div className="size-4">
               <AddIcon label="Create" />
             </div>
@@ -93,7 +93,7 @@ export function BrandHeader() {
 
         {/* Right button group - 300px width with specific buttons */}
         <div className="hidden items-center gap-1 md:flex w-[300px] justify-end">
-          <Button variant="outline" size="sm" className="hover:bg-muted">
+          <Button variant="outline">
             <div className="size-4">
               <RovoChatIcon label="Rovo Chat" />
             </div>
@@ -103,7 +103,6 @@ export function BrandHeader() {
           <Button
             variant="ghost"
             size="icon"
-            className="hover:bg-muted"
           >
             <div className="size-4">
               <NotificationIcon label="Notifications" />
@@ -113,7 +112,6 @@ export function BrandHeader() {
           <Button
             variant="ghost"
             size="icon"
-            className="hover:bg-muted"
           >
             <div className="size-4">
               <QuestionCircleIcon label="Support" />
