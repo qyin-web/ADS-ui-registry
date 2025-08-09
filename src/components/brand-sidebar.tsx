@@ -175,8 +175,6 @@ export function BrandSidebar({
       collapsible="offcanvas"
       className="mt-12"
       style={{
-        '--sidebar-width': '25rem',
-        '--sidebar-width-mobile': '25rem',
         height: 'calc(100vh - 3rem)'
       } as React.CSSProperties}
     >
