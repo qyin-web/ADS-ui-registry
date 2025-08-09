@@ -14,17 +14,17 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
-          "border bg-background hover:bg-muted dark:bg-input/30 dark:border-input dark:hover:bg-input/50 font-medium text-[14px] leading-5",
+          "border bg-background text-secondary-foreground hover:bg-muted dark:bg-input/30 dark:border-input dark:hover:bg-input/50 font-medium text-[14px] leading-5",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 font-medium text-[14px] leading-5",
+          "bg-secondary text-secondary-foreground hover:bg-muted font-medium text-[14px] leading-5",
         ghost:
-          "hover:bg-muted hover:text-accent-foreground dark:hover:bg-accent/50 font-medium text-[14px] leading-5",
+          "text-secondary-foreground hover:bg-muted hover:text-accent-foreground dark:hover:bg-accent/50 font-medium text-[14px] leading-5",
         link: "text-primary underline-offset-4 hover:underline font-medium text-[14px] leading-5",
       },
       size: {
         default: "h-8 rounded-lg gap-1.5 px-3 py-1", /* ADS medium size - 32px */
-        sm: "h-8 rounded-lg gap-1.5 px-3 py-1", /* ADS medium size - 32px */
-        lg: "h-12 rounded-lg px-4 has-[>svg]:px-3", /* ADS large size */
+        sm: "h-6 rounded-lg gap-1.5 px-3 py-1", /* ADS small size - 24px */
+        lg: "h-8 rounded-lg px-4 has-[>svg]:px-3", /* ADS large size */
         icon: "size-8", /* ADS icon button size */
       },
     },

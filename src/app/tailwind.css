@@ -88,25 +88,7 @@
     cursor: pointer !important;
   }
 
-  /* Override any default button heights to ensure 32px */
-  button:not([class*='h-']) {
-    height: 2rem !important; /* 32px */
-  }
 
-  /* Force buttons with size="sm" to be exactly 32px */
-  button[data-slot="button"] {
-    height: 2rem !important; /* 32px */
-  }
-
-  /* Override any h-9 classes on buttons */
-  button.h-9 {
-    height: 2rem !important; /* 32px */
-  }
-
-  /* Override any default button heights */
-  button:not([class*='h-']):not([class*='size-']) {
-    height: 2rem !important; /* 32px */
-  }
 
   /* Force all buttons to have 4px border radius */
   button {
