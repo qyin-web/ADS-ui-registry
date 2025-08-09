@@ -35,9 +35,7 @@ export function BrandHeader() {
             className="hidden md:flex"
             onClick={toggleSidebar}
           >
-            <div className="size-4">
-              <SidebarCollapseIcon label="Toggle sidebar" />
-            </div>
+            <SidebarCollapseIcon label="Toggle sidebar" />
           </Button>
 
           {/* App Switcher Button */}
@@ -46,9 +44,7 @@ export function BrandHeader() {
             size="icon"
             className="hidden md:flex"
           >
-            <div className="size-4">
-              <AppSwitcherIcon label="App switcher" />
-            </div>
+            <AppSwitcherIcon label="App switcher" />
           </Button>
 
           {/* Mobile Menu Button */}
@@ -58,7 +54,7 @@ export function BrandHeader() {
             className="md:hidden"
             onClick={toggleSidebar}
           >
-            <Menu className="size-4" />
+            <Menu />
           </Button>
 
           {/* Logo with 4px margin to test spacing */}
@@ -100,18 +96,14 @@ export function BrandHeader() {
             variant="ghost"
             size="icon"
           >
-            <div className="size-4">
-              <NotificationIcon label="Notifications" />
-            </div>
+            <NotificationIcon label="Notifications" />
           </Button>
 
           <Button
             variant="ghost"
             size="icon"
           >
-            <div className="size-4">
-              <QuestionCircleIcon label="Support" />
-            </div>
+            <QuestionCircleIcon label="Support" />
           </Button>
 
           <div className="px-0.5">
