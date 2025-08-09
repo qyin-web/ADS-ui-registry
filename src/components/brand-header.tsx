@@ -92,9 +92,7 @@ export function BrandHeader() {
         {/* Right button group - 300px width with specific buttons */}
         <div className="hidden items-center gap-1 md:flex w-[300px] justify-end">
           <Button variant="outline">
-            <div className="size-4">
-              <RovoChatIcon label="Rovo Chat" />
-            </div>
+            <RovoChatIcon label="Rovo Chat" />
             Rovo Chat
           </Button>
 
