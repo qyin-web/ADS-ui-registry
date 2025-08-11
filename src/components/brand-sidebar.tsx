@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation"
 import type * as React from "react"
 
 import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 import {
   Sidebar,
   SidebarContent,
@@ -187,7 +188,10 @@ export function BrandSidebar({ collapsed = false, onToggle, className }: Sidebar
                       asChild
                       isActive={pathname === item.href}
                       tooltip={item.title}
-                      className="font-medium"
+                      className={cn(
+                        "font-medium",
+                        item.title === "Qiao's Confluence UI kit" ? "pl-1" : ""
+                      )}
                     >
                       <Link href={item.href}>
                         <div
