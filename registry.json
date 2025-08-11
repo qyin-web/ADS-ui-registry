@@ -111,6 +111,7 @@
           "type": "registry:page",
           "target": "app/page.tsx"
         }
+        
       ]
     },
     {

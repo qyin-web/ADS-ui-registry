@@ -13,3 +13,9 @@
     @apply border-border;
   }
 }
+
+@layer components {
+  [data-slot="card"] {
+    box-shadow: none !important;
+  }
+}
