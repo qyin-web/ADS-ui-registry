@@ -47,12 +47,12 @@
       "type": "registry:block",
       "title": "Blank Confluence",
       "description": "A blank Confluence application with all ADS components and code",
-              "registryDependencies": [
-          "https://ads-ui-registry.vercel.app/r/brand-header.json",
-          "https://ads-ui-registry.vercel.app/r/brand-sidebar.json",
-          "https://ads-ui-registry.vercel.app/r/product-grid.json",
-          "https://ads-ui-registry.vercel.app/r/theme.json"
-        ],
+      "registryDependencies": [
+        "https://ads-ui-registry.vercel.app/r/brand-header.json",
+        "https://ads-ui-registry.vercel.app/r/brand-sidebar.json",
+        "https://ads-ui-registry.vercel.app/r/product-grid.json",
+        "https://ads-ui-registry.vercel.app/r/theme.json"
+      ],
       "files": [
         {
           "path": "src/components/brand-header.tsx",
@@ -91,12 +91,12 @@
       "type": "registry:block",
       "title": "Confluence header + sidebar",
       "description": "A Confluence application with header and sidebar components using ADS theme",
-              "registryDependencies": [
-          "https://ads-ui-registry.vercel.app/r/sonner.json",
-          "https://ads-ui-registry.vercel.app/r/brand-header.json",
-          "https://ads-ui-registry.vercel.app/r/brand-sidebar.json",
-          "https://ads-ui-registry.vercel.app/r/theme.json"
-        ],
+      "registryDependencies": [
+        "https://ads-ui-registry.vercel.app/r/sonner.json",
+        "https://ads-ui-registry.vercel.app/r/brand-header.json",
+        "https://ads-ui-registry.vercel.app/r/brand-sidebar.json",
+        "https://ads-ui-registry.vercel.app/r/theme.json"
+      ],
       "files": [
         {
           "path": "src/components/brand-header.tsx",
@@ -121,7 +121,6 @@
           "type": "registry:page",
           "target": "app/page.tsx"
         }
-        
       ]
     },
     {
@@ -129,11 +128,11 @@
       "type": "registry:block",
       "title": "Test Block",
       "description": "A simple test block to verify V0 block creation",
-              "registryDependencies": [
-          "https://ads-ui-registry.vercel.app/r/sonner.json",
-          "https://ads-ui-registry.vercel.app/r/logo.json",
-          "https://ads-ui-registry.vercel.app/r/theme.json"
-        ],
+      "registryDependencies": [
+        "https://ads-ui-registry.vercel.app/r/sonner.json",
+        "https://ads-ui-registry.vercel.app/r/logo.json",
+        "https://ads-ui-registry.vercel.app/r/theme.json"
+      ],
       "files": [
         {
           "path": "src/v0/minimal-layout.tsx",
@@ -152,10 +151,10 @@
       "type": "registry:block",
       "title": "Confluence Store",
       "description": "A Confluence store application with ADS themed components",
-              "registryDependencies": [
-          "https://ads-ui-registry.vercel.app/r/product-grid.json",
-          "https://ads-ui-registry.vercel.app/r/theme.json"
-        ],
+      "registryDependencies": [
+        "https://ads-ui-registry.vercel.app/r/product-grid.json",
+        "https://ads-ui-registry.vercel.app/r/theme.json"
+      ],
       "files": [
         {
           "path": "src/v0/minimal-layout.tsx",
@@ -174,15 +173,15 @@
       "type": "registry:component",
       "title": "Brand Header",
       "description": "A styled, simple, reusable header",
-              "registryDependencies": [
-          "https://ads-ui-registry.vercel.app/r/button.json",
-          "https://ads-ui-registry.vercel.app/r/input.json",
-          "https://ads-ui-registry.vercel.app/r/avatar.json",
-          "https://ads-ui-registry.vercel.app/r/brand-sidebar.json",
-          "https://ads-ui-registry.vercel.app/r/sonner.json",
-          "https://ads-ui-registry.vercel.app/r/logo.json",
-          "https://ads-ui-registry.vercel.app/r/theme.json"
-        ],
+      "registryDependencies": [
+        "https://ads-ui-registry.vercel.app/r/button.json",
+        "https://ads-ui-registry.vercel.app/r/input.json",
+        "https://ads-ui-registry.vercel.app/r/avatar.json",
+        "https://ads-ui-registry.vercel.app/r/brand-sidebar.json",
+        "https://ads-ui-registry.vercel.app/r/sonner.json",
+        "https://ads-ui-registry.vercel.app/r/logo.json",
+        "https://ads-ui-registry.vercel.app/r/theme.json"
+      ],
       "files": [
         {
           "path": "src/components/brand-header.tsx",

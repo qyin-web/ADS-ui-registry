@@ -14,8 +14,9 @@ export default function RegistryLayout({
 }>) {
   return (
     <SidebarProvider>
-      <MobileSidebarTrigger />
-      <RegistrySidebar />
+      {/* Temporarily hidden to fix layout issues */}
+      {/* <MobileSidebarTrigger /> */}
+      {/* <RegistrySidebar /> */}
       <main className="flex w-full justify-center">{children}</main>
       <Toaster />
     </SidebarProvider>
