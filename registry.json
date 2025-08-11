@@ -65,6 +65,11 @@
           "target": "components/brand-sidebar.tsx"
         },
         {
+          "path": "src/components/ui/sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/ui/sidebar.tsx"
+        },
+        {
           "path": "src/components/logo.tsx",
           "type": "registry:component",
           "target": "components/logo.tsx"
