@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "TEST REGISTRY V0",
-  "homepage": "https://shadcn-ui-registry-starter-five.vercel.app",
+  "homepage": "https://ads-ui-registry.vercel.app",
   "items": [
     {
       "name": "registry",
@@ -47,12 +47,12 @@
       "type": "registry:block",
       "title": "Blank Confluence",
       "description": "A blank Confluence application with all ADS components and code",
-      "registryDependencies": [
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/brand-header.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/brand-sidebar.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/product-grid.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
-      ],
+              "registryDependencies": [
+          "https://ads-ui-registry.vercel.app/r/brand-header.json",
+          "https://ads-ui-registry.vercel.app/r/brand-sidebar.json",
+          "https://ads-ui-registry.vercel.app/r/product-grid.json",
+          "https://ads-ui-registry.vercel.app/r/theme.json"
+        ],
       "files": [
         {
           "path": "src/components/brand-header.tsx",
@@ -91,12 +91,12 @@
       "type": "registry:block",
       "title": "Confluence header + sidebar",
       "description": "A Confluence application with header and sidebar components using ADS theme",
-      "registryDependencies": [
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/sonner.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/brand-header.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/brand-sidebar.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
-      ],
+              "registryDependencies": [
+          "https://ads-ui-registry.vercel.app/r/sonner.json",
+          "https://ads-ui-registry.vercel.app/r/brand-header.json",
+          "https://ads-ui-registry.vercel.app/r/brand-sidebar.json",
+          "https://ads-ui-registry.vercel.app/r/theme.json"
+        ],
       "files": [
         {
           "path": "src/components/brand-header.tsx",
@@ -129,11 +129,11 @@
       "type": "registry:block",
       "title": "Test Block",
       "description": "A simple test block to verify V0 block creation",
-      "registryDependencies": [
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/sonner.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/logo.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
-      ],
+              "registryDependencies": [
+          "https://ads-ui-registry.vercel.app/r/sonner.json",
+          "https://ads-ui-registry.vercel.app/r/logo.json",
+          "https://ads-ui-registry.vercel.app/r/theme.json"
+        ],
       "files": [
         {
           "path": "src/v0/minimal-layout.tsx",
@@ -152,10 +152,10 @@
       "type": "registry:block",
       "title": "Confluence Store",
       "description": "A Confluence store application with ADS themed components",
-      "registryDependencies": [
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/product-grid.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
-      ],
+              "registryDependencies": [
+          "https://ads-ui-registry.vercel.app/r/product-grid.json",
+          "https://ads-ui-registry.vercel.app/r/theme.json"
+        ],
       "files": [
         {
           "path": "src/v0/minimal-layout.tsx",
@@ -174,15 +174,15 @@
       "type": "registry:component",
       "title": "Brand Header",
       "description": "A styled, simple, reusable header",
-      "registryDependencies": [
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/input.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/avatar.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/brand-sidebar.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/sonner.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/logo.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
-      ],
+              "registryDependencies": [
+          "https://ads-ui-registry.vercel.app/r/button.json",
+          "https://ads-ui-registry.vercel.app/r/input.json",
+          "https://ads-ui-registry.vercel.app/r/avatar.json",
+          "https://ads-ui-registry.vercel.app/r/brand-sidebar.json",
+          "https://ads-ui-registry.vercel.app/r/sonner.json",
+          "https://ads-ui-registry.vercel.app/r/logo.json",
+          "https://ads-ui-registry.vercel.app/r/theme.json"
+        ],
       "files": [
         {
           "path": "src/components/brand-header.tsx",
@@ -202,10 +202,10 @@
       "description": "A styled, simple, reusable sidebar",
       "registryDependencies": [
         "badge",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/brand-sidebar.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/sonner.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/button.json",
+        "https://ads-ui-registry.vercel.app/r/brand-sidebar.json",
+        "https://ads-ui-registry.vercel.app/r/sonner.json",
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -226,9 +226,9 @@
       "description": "Username & password login section with customer quote.",
       "registryDependencies": [
         "badge",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/logo.json"
+        "https://ads-ui-registry.vercel.app/r/button.json",
+        "https://ads-ui-registry.vercel.app/r/theme.json",
+        "https://ads-ui-registry.vercel.app/r/logo.json"
       ],
       "files": [
         {
@@ -253,7 +253,7 @@
       "title": "Brand Logo",
       "description": "A styled, simple, reusable logo",
       "registryDependencies": [
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -269,8 +269,8 @@
       "description": "Attention-grabbing section for the top of your landing pages.",
       "registryDependencies": [
         "badge",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/button.json",
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -295,8 +295,8 @@
       "title": "Promo",
       "description": "Attention-grabbing section to display the current promotional deal.",
       "registryDependencies": [
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/button.json",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/button.json",
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -321,7 +321,7 @@
       "title": "Product Grid",
       "description": "Product grid displaying all products with API to fetch data",
       "registryDependencies": [
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -346,7 +346,7 @@
       "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
       "registryDependencies": [
         "accordion",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -363,7 +363,7 @@
       "description": "Displays a callout for user attention.",
       "registryDependencies": [
         "alert",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -380,7 +380,7 @@
       "description": "An image element with a fallback for representing the user.",
       "registryDependencies": [
         "avatar",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -397,7 +397,7 @@
       "description": "Displays a small count or status indicator.",
       "registryDependencies": [
         "badge",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -414,7 +414,7 @@
       "description": "Displays the path to the current resource using a hierarchy of links.",
       "registryDependencies": [
         "breadcrumb",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -430,7 +430,7 @@
       "title": "Button",
       "description": "Allows users to take actions with a single click or tap.",
       "registryDependencies": [
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -447,7 +447,7 @@
       "description": "A date field component that allows users to enter and edit date.",
       "registryDependencies": [
         "calendar",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -464,7 +464,7 @@
       "description": "Containers for displaying content and actions about a single subject.",
       "registryDependencies": [
         "card",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -481,7 +481,7 @@
       "description": "Beautiful charts. Built using Recharts. Copy and paste into your apps.",
       "registryDependencies": [
         "chart",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -498,7 +498,7 @@
       "description": "Allows users to select multiple items from a list of options.",
       "registryDependencies": [
         "checkbox",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -515,7 +515,7 @@
       "description": "Powerful table and datagrids built using TanStack Table.",
       "registryDependencies": [
         "data-table",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -532,7 +532,7 @@
       "description": "Displays the path to the current resource using a hierarchy of links.",
       "registryDependencies": [
         "date-picker",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -549,7 +549,7 @@
       "description": "A modal dialog that interrupts the user with important content.",
       "registryDependencies": [
         "dialog",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -566,7 +566,7 @@
       "description": "Displays a menu to the user triggered by a button.",
       "registryDependencies": [
         "dropdown-menu",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -582,7 +582,7 @@
       "title": "Input",
       "description": "Displays a form input field or a component that looks like an input field.",
       "registryDependencies": [
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -598,7 +598,7 @@
       "description": "A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.",
       "registryDependencies": [
         "menu-bar",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -615,7 +615,7 @@
       "description": "Displays a list of options for the user to pick from—triggered by a button.",
       "registryDependencies": [
         "select",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -632,7 +632,7 @@
       "description": "Visually or semantically separates content.",
       "registryDependencies": [
         "separator",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -649,7 +649,7 @@
       "description": "Use to show a placeholder while content is loading.",
       "registryDependencies": [
         "skeleton",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -666,7 +666,7 @@
       "description": "An input where the user selects a value from within a given range.",
       "registryDependencies": [
         "slider",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -683,7 +683,7 @@
       "description": "An opinionated toast component for React.",
       "registryDependencies": [
         "sonner",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -705,7 +705,7 @@
       "description": "A control that allows the user to toggle between checked and not checked.",
       "registryDependencies": [
         "switch",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -722,7 +722,7 @@
       "description": "A responsive table component.",
       "registryDependencies": [
         "table",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -739,7 +739,7 @@
       "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
       "registryDependencies": [
         "tabs",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -756,7 +756,7 @@
       "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
       "registryDependencies": [
         "toggle-group",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -773,7 +773,7 @@
       "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
       "registryDependencies": [
         "tooltip",
-        "https://shadcn-ui-registry-starter-five.vercel.app/r/theme.json"
+        "https://ads-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
