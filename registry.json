@@ -89,8 +89,8 @@
     {
       "name": "dashboard",
       "type": "registry:block",
-      "title": "Confluence Dashboard",
-      "description": "A Confluence dashboard application with ADS themed components",
+      "title": "Confluence header + sidebar",
+      "description": "A Confluence application with header and sidebar components using ADS theme",
       "registryDependencies": [
         "https://shadcn-ui-registry-starter-five.vercel.app/r/sonner.json",
         "https://shadcn-ui-registry-starter-five.vercel.app/r/brand-header.json",
