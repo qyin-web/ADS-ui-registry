@@ -149,7 +149,7 @@ export function BrandSidebar({ collapsed = false, onToggle, className }: Sidebar
       <SidebarContent className="flex flex-col h-[calc(100vh-3rem)] pb-16">
         <div className="flex-1">
           {/* Top Navigation */}
-          <SidebarGroup className="pb-0">
+          <SidebarGroup className="pt-3 pl-3 pr-3 pb-0">
             <SidebarGroupContent>
               <SidebarMenu className="gap-0">
                 {topNavItems.map((item) => (
@@ -176,7 +176,7 @@ export function BrandSidebar({ collapsed = false, onToggle, className }: Sidebar
           <SidebarSeparator className="mt-3 mx-0" />
 
           {/* Content Navigation */}
-          <SidebarGroup className="pt-0 pb-0">
+          <SidebarGroup className="pt-0 pb-0 pl-3 pr-3">
             <SidebarGroupContent>
               <SidebarMenu className="gap-0">
                 {contentNavItems.slice(0, 3).map((item) => (
