@@ -150,7 +150,7 @@ export function BrandSidebar({ collapsed = false, onToggle, className }: Sidebar
           {/* Top Navigation */}
           <SidebarGroup className="pb-0">
             <SidebarGroupContent>
-              <SidebarMenu>
+              <SidebarMenu className="gap-0">
                 {topNavItems.map((item) => (
                   <SidebarMenuItem key={item.href}>
                     <SidebarMenuButton
@@ -177,7 +177,7 @@ export function BrandSidebar({ collapsed = false, onToggle, className }: Sidebar
           {/* Content Navigation */}
           <SidebarGroup className="pt-0 pb-0">
             <SidebarGroupContent>
-              <SidebarMenu>
+              <SidebarMenu className="gap-0">
                 {contentNavItems.slice(0, 3).map((item) => (
                   <SidebarMenuItem
                     key={item.href}
@@ -608,7 +608,7 @@ export function BrandSidebar({ collapsed = false, onToggle, className }: Sidebar
           {/* Bottom Navigation */}
           <SidebarGroup className="pt-0">
             <SidebarGroupContent>
-              <SidebarMenu>
+              <SidebarMenu className="gap-0">
                 {bottomNavItems.map((item) => (
                   <SidebarMenuItem key={item.href}>
                     <SidebarMenuButton
