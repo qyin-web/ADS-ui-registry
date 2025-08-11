@@ -4,7 +4,7 @@ import { Search, ChevronRight, ChevronDown, FileText, MoreHorizontal, Briefcase 
 import MegaphoneIcon from "@atlaskit/icon/core/megaphone"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import type * as React from "react"
+import * as React from "react"
 
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -188,10 +188,7 @@ export function BrandSidebar({ collapsed = false, onToggle, className }: Sidebar
                       asChild
                       isActive={pathname === item.href}
                       tooltip={item.title}
-                      className={cn(
-                        "font-medium",
-                        item.title === "Qiao's Confluence UI kit" ? "pl-1" : ""
-                      )}
+                      className={cn("font-medium", item.title === "Qiao's Confluence UI kit" ? "pl-1" : "")}
                     >
                       <Link href={item.href}>
                         <div
@@ -374,7 +371,7 @@ export function BrandSidebar({ collapsed = false, onToggle, className }: Sidebar
                           <div className="size-4">
                             <div className="size-4 text-orange-500">
                               <svg viewBox="0 0 16 16" fill="currentColor" className="size-4">
-                                <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0H4zm4.5 1.5L12.5 5H8.5V1.5zM4 2h3v4h5v8H4V2z" />
+                                <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0H4zm4.5 1.5L12.5 5H9.5V1.5zM4 2h3v4h5v8H4V2z" />
                               </svg>
                             </div>
                           </div>
@@ -647,8 +644,8 @@ export function BrandSidebar({ collapsed = false, onToggle, className }: Sidebar
           </SidebarGroup>
         </div>
 
-        {/* Bottom Action Buttons - Fixed at bottom */}
-        <div className="fixed bottom-0 left-0 w-[var(--sidebar-width)] p-2 border-t bg-background group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] transition-[left] duration-200 ease-linear z-10">
+        {/* Bottom Action Buttons - Absolute positioned within sidebar */}
+        <div className="absolute bottom-0 left-0 right-0 p-2 border-t bg-background z-10">
           <div className="flex gap-2">
             <Button className="flex-1 bg-transparent" variant="outline">
               Invite people
