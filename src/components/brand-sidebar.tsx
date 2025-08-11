@@ -145,7 +145,7 @@ export function BrandSidebar({ collapsed = false, onToggle, className }: Sidebar
         } as React.CSSProperties
       }
     >
-      <SidebarContent className="flex flex-col h-[calc(100vh-3rem)]">
+      <SidebarContent className="flex flex-col h-[calc(100vh-3rem)] pb-16">
         <div className="flex-1">
           {/* Top Navigation */}
           <SidebarGroup className="pb-0">
@@ -644,7 +644,7 @@ export function BrandSidebar({ collapsed = false, onToggle, className }: Sidebar
         </div>
 
         {/* Bottom Action Buttons - Fixed at bottom */}
-        <div className="mt-auto p-2 border-t">
+        <div className="fixed bottom-0 left-0 w-[var(--sidebar-width)] p-2 border-t bg-background group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] transition-[left] duration-200 ease-linear z-10">
           <div className="flex gap-2">
             <Button className="flex-1 bg-transparent" variant="outline">
               Invite people
