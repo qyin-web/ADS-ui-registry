@@ -193,6 +193,7 @@ export function BrandSidebar({
                         (pathname === "" && item.href === "/")
                       }
                       tooltip={item.title}
+                      className="font-medium"
                     >
                       <Link href={item.href}>
                         <div className="size-4">
@@ -225,6 +226,7 @@ export function BrandSidebar({
                       asChild
                       isActive={pathname === item.href}
                       tooltip={item.title}
+                      className="font-medium"
                     >
                       <Link href={item.href}>
                         <div className={item.title === "Qiao's Confluence UI kit" ? "size-6 flex items-center justify-center" : "size-4"}>
@@ -260,6 +262,7 @@ export function BrandSidebar({
                       asChild
                       isActive={pathname === item.href}
                       tooltip={item.title}
+                      className="font-medium"
                     >
                       <Link href={item.href}>
                         <div className="size-4">
@@ -292,6 +295,7 @@ export function BrandSidebar({
                       asChild
                       isActive={pathname === item.href}
                       tooltip={item.title}
+                      className="font-medium"
                     >
                       <Link href={item.href}>
                         <div className={item.title === "Company hub" || item.title === "Jira" ? "size-5 flex items-center justify-center" : "size-4"}>
